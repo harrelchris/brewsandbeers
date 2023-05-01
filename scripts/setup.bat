@@ -17,7 +17,7 @@ python -m pip install -U pip setuptools wheel
 pip install -r requirements-dev.txt
 
 :: Install pre-commit
-pre-commit install
+:: pre-commit install
 
 :: Create .env from example
 if not exist .env (
