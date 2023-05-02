@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Detail{% endblock %}
+
+{% block content %}
+  <h1>Detail</h1>
+  <p>{{ beer.name }}</p>
+  <p>
+    <a href="{% url 'beer:beer_list' %}">List</a> -
+    <a href="{% url 'beer:beer_update' beer.pk %}">Update</a> -
+    <a href="{% url 'beer:beer_delete' beer.pk %}">Delete</a>
+  </p>
+{% endblock %}

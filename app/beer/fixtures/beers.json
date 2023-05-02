@@ -1,0 +1,106 @@
+[
+  {
+    "model": "beer.beer",
+    "pk": 1,
+    "fields": {
+      "name": "Wander Litely American Lager",
+      "brewery": 1
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 2,
+    "fields": {
+      "name": "Essential Delay IPA",
+      "brewery": 1
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 3,
+    "fields": {
+      "name": "Together Belgian Dubbel",
+      "brewery": 1
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 4,
+    "fields": {
+      "name": "Extra Brown Ale",
+      "brewery": 1
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 5,
+    "fields": {
+      "name": "Coconut Correspondent Export Stout",
+      "brewery": 1
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 6,
+    "fields": {
+      "name": "Reko Suave Coffee IPA",
+      "brewery": 1
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 7,
+    "fields": {
+      "name": "Bham City Blonde Ale",
+      "brewery": 1
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 8,
+    "fields": {
+      "name": "Range Life IPA",
+      "brewery": 1
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 9,
+    "fields": {
+      "name": "Peche: Spontaneous Barrel-Aged Beer on Peaches",
+      "brewery": 1
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 10,
+    "fields": {
+      "name": "Kölsch",
+      "brewery": 1
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 11,
+    "fields": {
+      "name": "Curtain Call – Spontaneous Coolship Blend w/ Cherries",
+      "brewery": 1
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 12,
+    "fields": {
+      "name": "Prickly Pear & Lime Millie Sour",
+      "brewery": 1
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 12,
+    "fields": {
+      "name": "Shoe Toss IPA",
+      "brewery": 1
+    }
+  }
+]

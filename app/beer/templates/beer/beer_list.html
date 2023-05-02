@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}List{% endblock %}
+
+{% block content %}
+  <h1>List</h1>
+  <p><a href="{% url 'beer:beer_create' %}">Create</a></p>
+  {% if beer_list %}
+    <ul>
+    {% for beer in beer_list %}
+      <li><a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a></li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p><a href="{% url 'beer:beer_create' %}">Create</a></p>
+  {% endif %}
+{% endblock %}
