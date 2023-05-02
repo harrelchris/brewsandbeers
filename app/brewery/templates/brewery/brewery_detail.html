@@ -5,6 +5,15 @@
 {% block content %}
   <h1>Detail</h1>
   <p>{{ brewery.name }}</p>
+  <h2>Beers</h2>
+  {% if beer_list %}
+    <ul>
+    {% for beer in beer_list %}
+      <li><a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a></li>
+    {% endfor %}
+    </ul>
+  {% else %}
+  {% endif %}
   <p>
     <a href="{% url 'brewery:brewery_list' %}">List</a> -
     <a href="{% url 'brewery:brewery_update' brewery.pk %}">Update</a> -
