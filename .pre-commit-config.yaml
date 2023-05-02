@@ -18,6 +18,7 @@ repos:
       - id: detect-private-key
       - id: debug-statements
       - id: end-of-file-fixer
+        exclude_types: ["html"]
       - id: mixed-line-ending
       - id: requirements-txt-fixer
       - id: trailing-whitespace
