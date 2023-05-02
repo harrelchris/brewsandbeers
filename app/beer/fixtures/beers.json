@@ -102,5 +102,365 @@
       "name": "Shoe Toss IPA",
       "brewery": 1
     }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 12,
+    "fields": {
+      "name": "Batch 15",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 13,
+    "fields": {
+      "name": "Dawn Patrol",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 14,
+    "fields": {
+      "name": "Cosmic Dreams",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 15,
+    "fields": {
+      "name": "Monarch",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 16,
+    "fields": {
+      "name": "Classic",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 17,
+    "fields": {
+      "name": "Coastal Pils",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 18,
+    "fields": {
+      "name": "BHam Brown",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 19,
+    "fields": {
+      "name": "Sparkling Hop Water",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 20,
+    "fields": {
+      "name": "Yakima Select",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 21,
+    "fields": {
+      "name": "Tateyama",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 22,
+    "fields": {
+      "name": "Unidos",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 23,
+    "fields": {
+      "name": "Hook's Stash",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 24,
+    "fields": {
+      "name": "Das Boot",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 25,
+    "fields": {
+      "name": "Fresh Hop Kolsch",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 26,
+    "fields": {
+      "name": "Charlie Foxtrot",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 27,
+    "fields": {
+      "name": "B Proud",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 28,
+    "fields": {
+      "name": "Captain Ron",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 29,
+    "fields": {
+      "name": "Fish Have Feelings",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 30,
+    "fields": {
+      "name": "Disco Lemonade",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 31,
+    "fields": {
+      "name": "Strawb-Hab Disco Lemonade",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 32,
+    "fields": {
+      "name": "American Stout",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 33,
+    "fields": {
+      "name": "Satan's Airport",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 34,
+    "fields": {
+      "name": "Ginger Rye",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 35,
+    "fields": {
+      "name": "Melopepo",
+      "brewery": 2
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 37,
+    "fields": {
+      "name": "Into the Haze",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 38,
+    "fields": {
+      "name": "Heliotrope",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 39,
+    "fields": {
+      "name": "Bastard Kat",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 40,
+    "fields": {
+      "name": "Sunnyland",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 41,
+    "fields": {
+      "name": "Red Cap",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 42,
+    "fields": {
+      "name": "Premium Lager",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 43,
+    "fields": {
+      "name": "Pilsner",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 44,
+    "fields": {
+      "name": "Helles",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 45,
+    "fields": {
+      "name": "Gose",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 46,
+    "fields": {
+      "name": "Russian Imperial",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 47,
+    "fields": {
+      "name": "Transporter",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 48,
+    "fields": {
+      "name": "Dry Stout",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 49,
+    "fields": {
+      "name": "Raspberry Apero",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 50,
+    "fields": {
+      "name": "Blackberry Apero",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 51,
+    "fields": {
+      "name": "Greenwood",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 52,
+    "fields": {
+      "name": "Kitten Mittens",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 53,
+    "fields": {
+      "name": "Fresh Hop",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 54,
+    "fields": {
+      "name": "Party in the Woods",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 55,
+    "fields": {
+      "name": "Raspberry Gose",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 56,
+    "fields": {
+      "name": "Cherry Gose",
+      "brewery": 3
+    }
+  },
+  {
+    "model": "beer.beer",
+    "pk": 57,
+    "fields": {
+      "name": "Blood Orange Gose",
+      "brewery": 3
+    }
   }
 ]
