@@ -1,0 +1,23 @@
+[
+  {
+    "model": "brewery.brewery",
+    "pk": 1,
+    "fields": {
+      "name": "Wander Brewery"
+    }
+  },
+  {
+    "model": "brewery.brewery",
+    "pk": 2,
+    "fields": {
+      "name": "Aslan Brewing Company"
+    }
+  },
+  {
+    "model": "brewery.brewery",
+    "pk": 3,
+    "fields": {
+      "name": "Kulshan Trackside Beer Garden"
+    }
+  }
+]
