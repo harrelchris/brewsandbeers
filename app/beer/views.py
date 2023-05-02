@@ -1,3 +1,4 @@
+from django.apps import apps
 from django.urls import reverse_lazy
 from django.views.generic import (
     CreateView,
@@ -8,6 +9,8 @@ from django.views.generic import (
 )
 
 from . import models
+
+Brewery = apps.get_model("brewery", "Brewery")
 
 
 class BeerCreateView(CreateView):
@@ -25,6 +28,11 @@ class BeerDeleteView(DeleteView):
 
 class BeerDetailView(DetailView):
     model = models.Beer
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["brewery"] = Brewery.objects.get(pk=self.get_object().brewery.pk)
+        return context
 
 
 class BeerListView(ListView):
