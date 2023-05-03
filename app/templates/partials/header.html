@@ -3,5 +3,11 @@
     <a href="{% url 'index:index' %}">Brews and Beers</a>
     <a href="{% url 'brewery:brewery_list' %}">Breweries</a>
     <a href="{% url 'beer:beer_list' %}">Beers</a>
+    {% if user.is_authenticated %}
+      <a href="{% url 'user:logout' %}">Logout</a>
+      <a href="{% url 'user:profile' %}">{{ user.username }}</a>
+    {% else %}
+      <a href="{% url 'user:login' %}">Login</a>
+    {% endif %}
   </nav>
 </header>

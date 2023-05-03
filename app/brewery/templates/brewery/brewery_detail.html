@@ -14,9 +14,10 @@
     </ul>
   {% else %}
   {% endif %}
-  <p>
-    <a href="{% url 'brewery:brewery_list' %}">List</a> -
-    <a href="{% url 'brewery:brewery_update' brewery.pk %}">Update</a> -
-    <a href="{% url 'brewery:brewery_delete' brewery.pk %}">Delete</a>
-  </p>
+  {% if user.is_authenticated %}
+    <p>
+      <a href="{% url 'brewery:brewery_update' brewery.pk %}">Update</a> -
+      <a href="{% url 'brewery:brewery_delete' brewery.pk %}">Delete</a>
+    </p>
+  {% endif %}
 {% endblock %}

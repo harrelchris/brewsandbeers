@@ -6,9 +6,10 @@
   <h1>Detail</h1>
   <p>{{ beer.name }}</p>
   <p><a href="{% url 'brewery:brewery_detail' brewery.pk %}">{{ brewery.name }}</a></p>
-  <p>
-    <a href="{% url 'beer:beer_list' %}">List</a> -
-    <a href="{% url 'beer:beer_update' beer.pk %}">Update</a> -
-    <a href="{% url 'beer:beer_delete' beer.pk %}">Delete</a>
-  </p>
+  {% if user.is_authenticated %}
+    <p>
+      <a href="{% url 'beer:beer_update' beer.pk %}">Update</a> -
+      <a href="{% url 'beer:beer_delete' beer.pk %}">Delete</a>
+    </p>
+  {% endif %}
 {% endblock %}

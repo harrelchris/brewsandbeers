@@ -4,7 +4,9 @@
 
 {% block content %}
   <h1>List</h1>
-  <p><a href="{% url 'brewery:brewery_create' %}">Create</a></p>
+  {% if user.is_authenticated %}
+    <p><a href="{% url 'brewery:brewery_create' %}">Create</a></p>
+  {% endif %}
   {% if brewery_list %}
     <ul>
     {% for brewery in brewery_list %}
@@ -12,6 +14,6 @@
     {% endfor %}
     </ul>
   {% else %}
-    <p><a href="{% url 'brewery:brewery_create' %}">Create</a></p>
+    <p>No breweries found.</p>
   {% endif %}
 {% endblock %}
