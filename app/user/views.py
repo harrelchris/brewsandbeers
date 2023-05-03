@@ -1,7 +1,10 @@
+from django.apps import apps
 from django.contrib.auth import views as auth_views
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, TemplateView
+
+Review = apps.get_model("beer", "Review")
 
 
 class RegisterView(CreateView):
@@ -49,3 +52,8 @@ class PasswordChangeDoneView(auth_views.PasswordChangeDoneView):
 
 class ProfileView(TemplateView):
     template_name = "user/profile.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["review_list"] = Review.objects.filter(user=self.request.user)
+        return context

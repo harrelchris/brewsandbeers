@@ -8,8 +8,18 @@
   <p><a href="{% url 'brewery:brewery_detail' brewery.pk %}">{{ brewery.name }}</a></p>
   {% if user.is_authenticated %}
     <p>
+      <a href="{% url 'beer:review_create' beer.pk %}">Review</a> -
       <a href="{% url 'beer:beer_update' beer.pk %}">Update</a> -
       <a href="{% url 'beer:beer_delete' beer.pk %}">Delete</a>
     </p>
+  {% endif %}
+  {% if review_list %}
+    <ul>
+      {% for review in review_list %}
+        <li>Rated {{ review.rating }} by {{ review.user.username }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No review yet. Be the <a href="{% url 'beer:review_create' beer.pk %}">first!</a></p>
   {% endif %}
 {% endblock %}
