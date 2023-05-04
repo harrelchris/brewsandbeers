@@ -5,6 +5,12 @@
 {% block content %}
   <h1>Detail</h1>
   <p>{{ brewery.name }}</p>
+  {% if user.is_authenticated %}
+    <p>
+      <a href="{% url 'brewery:brewery_update' brewery.pk %}">Update</a> -
+      <a href="{% url 'brewery:brewery_delete' brewery.pk %}">Delete</a>
+    </p>
+  {% endif %}
   <h2>Beers</h2>
   {% if beer_list %}
     <ul>
@@ -14,10 +20,13 @@
     </ul>
   {% else %}
   {% endif %}
-  {% if user.is_authenticated %}
-    <p>
-      <a href="{% url 'brewery:brewery_update' brewery.pk %}">Update</a> -
-      <a href="{% url 'brewery:brewery_delete' brewery.pk %}">Delete</a>
-    </p>
+  {% if review_list %}
+    <ul>
+      {% for review in review_list %}
+        <li>Rated {{ review.rating }} by {{ review.user.username }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No review yet. Be the <a href="{% url 'brewery:review_create' brewery.pk %}">first!</a></p>
   {% endif %}
 {% endblock %}

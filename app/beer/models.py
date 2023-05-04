@@ -12,5 +12,5 @@ class Review(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     beer = models.ForeignKey(Beer, on_delete=models.CASCADE)
     rating = models.IntegerField(
-        validators=[MaxValueValidator(5), MinValueValidator(1)]
+        validators=[MaxValueValidator(5), MinValueValidator(1)],
     )

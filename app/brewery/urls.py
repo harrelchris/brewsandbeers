@@ -10,4 +10,5 @@ urlpatterns = [
     path("<str:pk>/", views.BreweryDetailView.as_view(), name="brewery_detail"),
     path("update/<str:pk>/", views.BreweryUpdateView.as_view(), name="brewery_update"),
     path("delete/<str:pk>/", views.BreweryDeleteView.as_view(), name="brewery_delete"),
+    path("<str:pk>/review/create/", views.ReviewCreateView.as_view(), name="review_create"),
 ]

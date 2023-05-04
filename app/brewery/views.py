@@ -32,6 +32,7 @@ class BreweryDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["beer_list"] = Beer.objects.filter(brewery=self.get_object())
+        context["review_list"] = models.BreweryReview.objects.filter(brewery=self.get_object())
         return context
 
 
@@ -46,3 +47,22 @@ class BreweryUpdateView(UpdateView):
 
     def get_success_url(self):
         return reverse_lazy("brewery:brewery_detail", kwargs={"pk": self.kwargs["pk"]})
+
+
+class ReviewCreateView(CreateView):
+    model = models.BreweryReview
+    fields = ["rating"]
+    template_name = "brewery/brewery_review_create.html"
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        form.instance.brewery = models.Brewery.objects.get(pk=self.kwargs["pk"])
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse_lazy("brewery:brewery_detail", kwargs={"pk": self.kwargs["pk"]})
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["brewery"] = models.Brewery.objects.get(pk=self.kwargs["pk"])
+        return context
