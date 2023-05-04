@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
-{% block title %}Detail{% endblock %}
+{% block title %}{{ brewery.name }}{% endblock %}
 
 {% block content %}
-  <h1>Detail</h1>
-  <p>{{ brewery.name }}</p>
+  <h1>{{ brewery.name }}</h1>
+  <p>Founded in {{ brewery.founded }}</p>
   {% if user.is_authenticated %}
     <p>
       <a href="{% url 'brewery:brewery_update' brewery.pk %}">Update</a> -
