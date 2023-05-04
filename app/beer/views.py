@@ -53,6 +53,7 @@ class ReviewCreateView(CreateView):
     model = models.Review
     fields = ["rating"]
     template_name_suffix = "_create"
+    template_name = "beer/beer_review_create.html"
 
     def form_valid(self, form):
         form.instance.user = self.request.user
