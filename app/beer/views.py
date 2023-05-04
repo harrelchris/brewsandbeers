@@ -32,7 +32,7 @@ class BeerDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["brewery"] = Brewery.objects.get(pk=self.get_object().brewery.pk)
-        context["review_list"] = models.Review.objects.filter(beer_id=self.kwargs["pk"])
+        context["review_list"] = models.BeerReview.objects.filter(beer_id=self.kwargs["pk"])
         return context
 
 
@@ -50,7 +50,7 @@ class BeerUpdateView(UpdateView):
 
 
 class ReviewCreateView(CreateView):
-    model = models.Review
+    model = models.BeerReview
     fields = ["rating"]
     template_name_suffix = "_create"
     template_name = "beer/beer_review_create.html"
