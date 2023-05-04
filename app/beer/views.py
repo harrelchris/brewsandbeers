@@ -51,8 +51,16 @@ class BeerUpdateView(UpdateView):
 
 class ReviewCreateView(CreateView):
     model = models.BeerReview
-    fields = ["rating"]
-    template_name_suffix = "_create"
+    fields = [
+        "rating",
+        "bitter",
+        "sweet",
+        "sour",
+        "carbonation",
+        "head",
+        "smell",
+        "text",
+    ]
     template_name = "beer/beer_review_create.html"
 
     def form_valid(self, form):
