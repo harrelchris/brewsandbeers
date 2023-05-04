@@ -4,6 +4,10 @@
     "pk": 1,
     "fields": {
       "name": "Wander Litely American Lager",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -12,6 +16,10 @@
     "pk": 2,
     "fields": {
       "name": "Essential Delay IPA",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -20,6 +28,10 @@
     "pk": 3,
     "fields": {
       "name": "Together Belgian Dubbel",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -28,6 +40,10 @@
     "pk": 4,
     "fields": {
       "name": "Extra Brown Ale",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -36,6 +52,10 @@
     "pk": 5,
     "fields": {
       "name": "Coconut Correspondent Export Stout",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -44,6 +64,10 @@
     "pk": 6,
     "fields": {
       "name": "Reko Suave Coffee IPA",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -52,6 +76,10 @@
     "pk": 7,
     "fields": {
       "name": "Bham City Blonde Ale",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -60,6 +88,10 @@
     "pk": 8,
     "fields": {
       "name": "Range Life IPA",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -68,6 +100,10 @@
     "pk": 9,
     "fields": {
       "name": "Peche: Spontaneous Barrel-Aged Beer on Peaches",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -76,6 +112,10 @@
     "pk": 10,
     "fields": {
       "name": "Kölsch",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -84,6 +124,10 @@
     "pk": 11,
     "fields": {
       "name": "Curtain Call – Spontaneous Coolship Blend w/ Cherries",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -92,6 +136,10 @@
     "pk": 12,
     "fields": {
       "name": "Prickly Pear & Lime Millie Sour",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -100,6 +148,10 @@
     "pk": 12,
     "fields": {
       "name": "Shoe Toss IPA",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 1
     }
   },
@@ -108,6 +160,10 @@
     "pk": 12,
     "fields": {
       "name": "Batch 15",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -116,6 +172,10 @@
     "pk": 13,
     "fields": {
       "name": "Dawn Patrol",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -124,6 +184,10 @@
     "pk": 14,
     "fields": {
       "name": "Cosmic Dreams",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -132,6 +196,10 @@
     "pk": 15,
     "fields": {
       "name": "Monarch",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -140,6 +208,10 @@
     "pk": 16,
     "fields": {
       "name": "Classic",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -148,6 +220,10 @@
     "pk": 17,
     "fields": {
       "name": "Coastal Pils",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -156,6 +232,10 @@
     "pk": 18,
     "fields": {
       "name": "BHam Brown",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -164,6 +244,10 @@
     "pk": 19,
     "fields": {
       "name": "Sparkling Hop Water",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -172,6 +256,10 @@
     "pk": 20,
     "fields": {
       "name": "Yakima Select",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -180,6 +268,10 @@
     "pk": 21,
     "fields": {
       "name": "Tateyama",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -188,6 +280,10 @@
     "pk": 22,
     "fields": {
       "name": "Unidos",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -196,6 +292,10 @@
     "pk": 23,
     "fields": {
       "name": "Hook's Stash",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -204,6 +304,10 @@
     "pk": 24,
     "fields": {
       "name": "Das Boot",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -212,6 +316,10 @@
     "pk": 25,
     "fields": {
       "name": "Fresh Hop Kolsch",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -220,6 +328,10 @@
     "pk": 26,
     "fields": {
       "name": "Charlie Foxtrot",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -228,6 +340,10 @@
     "pk": 27,
     "fields": {
       "name": "B Proud",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -236,6 +352,10 @@
     "pk": 28,
     "fields": {
       "name": "Captain Ron",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -244,6 +364,10 @@
     "pk": 29,
     "fields": {
       "name": "Fish Have Feelings",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -252,6 +376,10 @@
     "pk": 30,
     "fields": {
       "name": "Disco Lemonade",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -260,6 +388,10 @@
     "pk": 31,
     "fields": {
       "name": "Strawb-Hab Disco Lemonade",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -268,6 +400,10 @@
     "pk": 32,
     "fields": {
       "name": "American Stout",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -276,6 +412,10 @@
     "pk": 33,
     "fields": {
       "name": "Satan's Airport",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -284,6 +424,10 @@
     "pk": 34,
     "fields": {
       "name": "Ginger Rye",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -292,6 +436,10 @@
     "pk": 35,
     "fields": {
       "name": "Melopepo",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 2
     }
   },
@@ -300,6 +448,10 @@
     "pk": 37,
     "fields": {
       "name": "Into the Haze",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -308,6 +460,10 @@
     "pk": 38,
     "fields": {
       "name": "Heliotrope",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -316,6 +472,10 @@
     "pk": 39,
     "fields": {
       "name": "Bastard Kat",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -324,6 +484,10 @@
     "pk": 40,
     "fields": {
       "name": "Sunnyland",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -332,6 +496,10 @@
     "pk": 41,
     "fields": {
       "name": "Red Cap",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -340,6 +508,10 @@
     "pk": 42,
     "fields": {
       "name": "Premium Lager",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -348,6 +520,10 @@
     "pk": 43,
     "fields": {
       "name": "Pilsner",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -356,6 +532,10 @@
     "pk": 44,
     "fields": {
       "name": "Helles",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -364,6 +544,10 @@
     "pk": 45,
     "fields": {
       "name": "Gose",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -372,6 +556,10 @@
     "pk": 46,
     "fields": {
       "name": "Russian Imperial",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -380,6 +568,10 @@
     "pk": 47,
     "fields": {
       "name": "Transporter",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -388,6 +580,10 @@
     "pk": 48,
     "fields": {
       "name": "Dry Stout",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -396,6 +592,10 @@
     "pk": 49,
     "fields": {
       "name": "Raspberry Apero",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -404,6 +604,10 @@
     "pk": 50,
     "fields": {
       "name": "Blackberry Apero",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -412,6 +616,10 @@
     "pk": 51,
     "fields": {
       "name": "Greenwood",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -420,6 +628,10 @@
     "pk": 52,
     "fields": {
       "name": "Kitten Mittens",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -428,6 +640,10 @@
     "pk": 53,
     "fields": {
       "name": "Fresh Hop",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -436,6 +652,10 @@
     "pk": 54,
     "fields": {
       "name": "Party in the Woods",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -444,6 +664,10 @@
     "pk": 55,
     "fields": {
       "name": "Raspberry Gose",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -452,6 +676,10 @@
     "pk": 56,
     "fields": {
       "name": "Cherry Gose",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   },
@@ -460,6 +688,10 @@
     "pk": 57,
     "fields": {
       "name": "Blood Orange Gose",
+      "type": "Lager",
+      "style": "American-Style Lager",
+      "abv": 4.5,
+      "ibu": 50,
       "brewery": 3
     }
   }

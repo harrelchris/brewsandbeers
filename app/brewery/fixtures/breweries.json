@@ -3,21 +3,24 @@
     "model": "brewery.brewery",
     "pk": 1,
     "fields": {
-      "name": "Wander Brewery"
+      "name": "Wander Brewery",
+      "founded": 1980
     }
   },
   {
     "model": "brewery.brewery",
     "pk": 2,
     "fields": {
-      "name": "Aslan Brewing Company"
+      "name": "Aslan Brewing Company",
+      "founded": 1980
     }
   },
   {
     "model": "brewery.brewery",
     "pk": 3,
     "fields": {
-      "name": "Kulshan Trackside Beer Garden"
+      "name": "Kulshan Trackside Beer Garden",
+      "founded": 1980
     }
   }
 ]
