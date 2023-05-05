@@ -23,3 +23,8 @@ urlpatterns = [
     path("brewery/", include("brewery.urls"), name="brewery"),
     path("user/", include("user.urls"), name="user"),
 ]
+
+
+admin.site.site_header = "Brews and Beers Admin"
+admin.site.site_title = "Brews and Beers"
+admin.site.index_title = "Admin Dashboard"
