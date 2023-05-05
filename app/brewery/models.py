@@ -35,6 +35,9 @@ class Brewery(models.Model):
         validators=[MaxValueValidator(datetime.date.today().year), MinValueValidator(1829)]  # Yuengling founded in 1829
     )
 
+    def __str__(self):
+        return self.name
+
 
 class BreweryReview(models.Model):
     brewery = models.ForeignKey(Brewery, on_delete=models.CASCADE)
@@ -43,10 +46,16 @@ class BreweryReview(models.Model):
         validators=[MaxValueValidator(5), MinValueValidator(1)],
     )
 
+    def __str__(self):
+        return f"{self.brewery.name} by {self.user.username}"
+
 
 class BreweryImage(models.Model):
     brewery = models.ForeignKey(Brewery, on_delete=models.CASCADE)
     path = models.CharField(max_length=256)
+
+    def __str__(self):
+        return f"{self.brewery.name} - {self.path}"
 
 
 class BreweryLocation(models.Model):
@@ -58,3 +67,6 @@ class BreweryLocation(models.Model):
     tours = models.BooleanField()
     capacity = models.CharField(max_length=256, choices=CAPACITIES)
     distribution = models.CharField(max_length=256, choices=DISTRIBUTIONS)
+
+    def __str__(self):
+        return f"{self.brewery.name} - {self.city}, {self.state} - {self.pk}"

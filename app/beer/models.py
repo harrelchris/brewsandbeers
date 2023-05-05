@@ -25,6 +25,9 @@ class Beer(models.Model):
     description = models.TextField(max_length=4096, null=True)
     color = models.CharField(max_length=256, null=True)
 
+    def __str__(self):
+        return f"{self.name} - {self.brewery.name}"
+
 
 class BeerReview(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -38,7 +41,13 @@ class BeerReview(models.Model):
     smell = models.IntegerField(validators=[MaxValueValidator(10), MinValueValidator(0)])
     text = models.TextField(max_length=4096)
 
+    def __str__(self):
+        return f"{self.beer.brewery.name} - {self.beer.name} by {self.user.username}"
+
 
 class BeerImage(models.Model):
     beer = models.ForeignKey(Beer, on_delete=models.CASCADE)
     path = models.CharField(max_length=256)
+
+    def __str__(self):
+        return f"{self.beer.brewery.name} - {self.beer.name} - {self.path}"
