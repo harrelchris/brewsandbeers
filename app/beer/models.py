@@ -46,8 +46,9 @@ class BeerReview(models.Model):
 
 
 class BeerImage(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     beer = models.ForeignKey(Beer, on_delete=models.CASCADE)
-    path = models.CharField(max_length=256)
+    image = models.ImageField(upload_to="images/beer/")
 
     def __str__(self):
-        return f"{self.beer.brewery.name} - {self.beer.name} - {self.path}"
+        return f"{self.beer.brewery.name} - {self.beer.name} - {self.pk}"
