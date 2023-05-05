@@ -11,6 +11,14 @@
   <p>IBU: {{ beer.ibu }}</p>
   <p>Color: {% if beer.color %}{{ beer.color }}{% else %}Unknown{% endif %}</p>
   <p>Description: {% if beer.description %}{{ beer.description }}{% else %}None{% endif %}</p>
+  {% if image_list %}
+    <p>Add a new image for this beer <a href="{% url 'beer:image_create' beer.pk %}">here</a></p>
+    {% for image in image_list %}
+      <img src="{{ image.image.url }}" alt="{{ image.beer.name }} by {{ image.user.username }}">
+    {% endfor %}
+  {% else %}
+    <p>No images found. Upload one <a href="{% url 'beer:image_create' beer.pk %}">here</a></p>
+  {% endif %}
   {% if user.is_authenticated %}
     <p>
       <a href="{% url 'beer:image_create' beer.pk %}">Add Image</a> -
