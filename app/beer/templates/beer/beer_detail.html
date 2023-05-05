@@ -13,6 +13,7 @@
   <p>Description: {% if beer.description %}{{ beer.description }}{% else %}None{% endif %}</p>
   {% if user.is_authenticated %}
     <p>
+      <a href="{% url 'beer:image_create' beer.pk %}">Add Image</a> -
       <a href="{% url 'beer:review_create' beer.pk %}">Review</a> -
       <a href="{% url 'beer:beer_update' beer.pk %}">Update</a> -
       <a href="{% url 'beer:beer_delete' beer.pk %}">Delete</a>

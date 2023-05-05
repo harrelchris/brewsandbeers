@@ -12,4 +12,5 @@ urlpatterns = [
     path("update/<str:pk>/", login_required(views.BeerUpdateView.as_view()), name="beer_update"),
     path("delete/<str:pk>/", login_required(views.BeerDeleteView.as_view()), name="beer_delete"),
     path("<str:pk>/review/create/", login_required(views.ReviewCreateView.as_view()), name="review_create"),
+    path("<str:pk>/image/create/", login_required(views.ImageCreateView.as_view()), name="image_create"),
 ]
