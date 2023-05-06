@@ -1,21 +1,15 @@
 # Brews and Beers
 
+Review and recommendation application for breweries and beers.
+
 ## Setup
 
 ### Prepare your environment
 
 Run the `setup` script
 
-#### Windows
-
 ```shell
 scripts\setup
-```
-
-#### Linux
-
-```shell
-bash scripts/setup
 ```
 
 ## Testing
@@ -32,12 +26,6 @@ Use the `test` script to run Pytest and Coverage and generate reports for both, 
 
 ```shell
 scripts\test
-```
-
-#### Linux
-
-```bash
-bash scripts/test
 ```
 
 ### Pytest
