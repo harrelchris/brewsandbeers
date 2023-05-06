@@ -1,7 +1,8 @@
 import datetime
-from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
+
+from models import BaseModel
 
 BREWERY_TYPES = [
     ("Brewery Only", "Brewery Only"),
@@ -29,36 +30,28 @@ DISTRIBUTIONS = [
 ]
 
 
-class Brewery(models.Model):
-    name = models.CharField(max_length=256)
+class Brewery(BaseModel):
+    name = models.CharField(max_length=256, unique=True)
     founded = models.IntegerField(
-        validators=[MaxValueValidator(datetime.date.today().year), MinValueValidator(1829)]  # Yuengling founded in 1829
+        validators=[
+            MinValueValidator(1829),  # Yuengling founded in 1829
+            MaxValueValidator(datetime.date.today().year),
+        ]
     )
 
     def __str__(self):
         return self.name
 
 
-class BreweryReview(models.Model):
+class BreweryImage(BaseModel):
     brewery = models.ForeignKey(Brewery, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    rating = models.IntegerField(
-        validators=[MaxValueValidator(5), MinValueValidator(1)],
-    )
+    image = models.ImageField(upload_to="images/brewery/")
 
     def __str__(self):
-        return f"{self.brewery.name} by {self.user.username}"
+        return f"{self.brewery.name} - {self.pk}"
 
 
-class BreweryImage(models.Model):
-    brewery = models.ForeignKey(Brewery, on_delete=models.CASCADE)
-    path = models.CharField(max_length=256)
-
-    def __str__(self):
-        return f"{self.brewery.name} - {self.path}"
-
-
-class BreweryLocation(models.Model):
+class BreweryLocation(BaseModel):
     brewery = models.ForeignKey(Brewery, on_delete=models.CASCADE)
     street = models.CharField(max_length=256)
     city = models.CharField(max_length=256)
@@ -70,3 +63,25 @@ class BreweryLocation(models.Model):
 
     def __str__(self):
         return f"{self.brewery.name} - {self.city}, {self.state} - {self.pk}"
+
+
+class BreweryLocationImage(BaseModel):
+    brewery_location = models.ForeignKey(BreweryLocation, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to="images/brewery_location/")
+
+    def __str__(self):
+        return f"{self.brewery_location.brewery.name} - {self.brewery_location.city} - {self.pk}"
+
+
+class BreweryLocationReview(BaseModel):
+    brewery_location = models.ForeignKey(BreweryLocation, on_delete=models.CASCADE)
+    text = models.TextField(max_length=4096)
+    rating = models.IntegerField(
+        validators=[
+            MinValueValidator(1),
+            MaxValueValidator(5),
+        ],
+    )
+
+    def __str__(self):
+        return f"{self.brewery_location.brewery.name} by {self.user.username}"
