@@ -1,4 +1,5 @@
 from django.apps import apps
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views.generic import (
     CreateView,
@@ -13,14 +14,14 @@ from . import models
 Brewery = apps.get_model("brewery", "Brewery")
 
 
-class BeerCreateView(CreateView):
+class BeerCreateView(LoginRequiredMixin, CreateView):
     model = models.Beer
     fields = ["name"]
     template_name_suffix = "_create"
     success_url = reverse_lazy("beer:beer_list")
 
 
-class BeerDeleteView(DeleteView):
+class BeerDeleteView(LoginRequiredMixin, DeleteView):
     model = models.Beer
     template_name_suffix = "_delete"
     success_url = reverse_lazy("beer:beer_list")
@@ -41,7 +42,7 @@ class BeerListView(ListView):
     model = models.Beer
 
 
-class BeerUpdateView(UpdateView):
+class BeerUpdateView(LoginRequiredMixin, UpdateView):
     model = models.Beer
     fields = ["name"]
     template_name_suffix = "_update"
@@ -50,7 +51,7 @@ class BeerUpdateView(UpdateView):
         return reverse_lazy("beer:beer_detail", kwargs={"pk": self.kwargs["pk"]})
 
 
-class ReviewCreateView(CreateView):
+class ReviewCreateView(LoginRequiredMixin, CreateView):
     model = models.BeerReview
     fields = [
         "rating",
@@ -78,7 +79,7 @@ class ReviewCreateView(CreateView):
         return context
 
 
-class ImageCreateView(CreateView):
+class ImageCreateView(LoginRequiredMixin, CreateView):
     model = models.BeerImage
     fields = ["image"]
     template_name = "beer/beer_image_create.html"

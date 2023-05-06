@@ -1,4 +1,5 @@
 from django.apps import apps
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views.generic import (
     CreateView,
@@ -13,14 +14,14 @@ from . import models
 Beer = apps.get_model("beer", "Beer")
 
 
-class BreweryCreateView(CreateView):
+class BreweryCreateView(LoginRequiredMixin, CreateView):
     model = models.Brewery
     fields = ["name"]
     template_name_suffix = "_create"
     success_url = reverse_lazy("brewery:brewery_list")
 
 
-class BreweryDeleteView(DeleteView):
+class BreweryDeleteView(LoginRequiredMixin, DeleteView):
     model = models.Brewery
     template_name_suffix = "_delete"
     success_url = reverse_lazy("brewery:brewery_list")
@@ -40,7 +41,7 @@ class BreweryListView(ListView):
     model = models.Brewery
 
 
-class BreweryUpdateView(UpdateView):
+class BreweryUpdateView(LoginRequiredMixin, UpdateView):
     model = models.Brewery
     fields = ["name"]
     template_name_suffix = "_update"
