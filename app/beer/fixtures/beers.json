@@ -8,7 +8,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -20,7 +22,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -32,7 +36,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -44,7 +50,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -56,7 +64,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -68,7 +78,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -80,7 +92,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -92,7 +106,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -104,7 +120,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -116,7 +134,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -128,7 +148,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -140,7 +162,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -152,7 +176,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 1
+      "brewery": 1,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -164,7 +190,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -176,7 +204,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -188,7 +218,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -200,7 +232,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -212,7 +246,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -224,7 +260,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -236,7 +274,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -248,7 +288,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -260,7 +302,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -272,7 +316,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -284,7 +330,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -296,7 +344,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -308,7 +358,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -320,7 +372,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -332,7 +386,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -344,7 +400,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -356,7 +414,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -368,7 +428,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -380,7 +442,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -392,7 +456,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -404,7 +470,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -416,7 +484,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -428,7 +498,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -440,7 +512,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 2
+      "brewery": 2,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -452,7 +526,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -464,7 +540,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -476,7 +554,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -488,7 +568,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -500,7 +582,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -512,7 +596,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -524,7 +610,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -536,7 +624,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -548,7 +638,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -560,7 +652,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -572,7 +666,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -584,7 +680,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -596,7 +694,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -608,7 +708,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -620,7 +722,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -632,7 +736,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -644,7 +750,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -656,7 +764,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -668,7 +778,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -680,7 +792,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   },
   {
@@ -692,7 +806,9 @@
       "style": "American-Style Lager",
       "abv": 4.5,
       "ibu": 50,
-      "brewery": 3
+      "brewery": 3,
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
     }
   }
 ]
