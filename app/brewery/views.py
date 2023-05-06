@@ -16,7 +16,10 @@ Beer = apps.get_model("beer", "Beer")
 
 class BreweryCreateView(LoginRequiredMixin, CreateView):
     model = models.Brewery
-    fields = ["name"]
+    fields = [
+        "name",
+        "founded",
+    ]
     template_name_suffix = "_create"
     success_url = reverse_lazy("brewery:brewery_list")
 
@@ -43,7 +46,10 @@ class BreweryListView(ListView):
 
 class BreweryUpdateView(LoginRequiredMixin, UpdateView):
     model = models.Brewery
-    fields = ["name"]
+    fields = [
+        "name",
+        "founded",
+    ]
     template_name_suffix = "_update"
 
     def get_success_url(self):
