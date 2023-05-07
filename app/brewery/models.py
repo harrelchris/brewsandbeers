@@ -2,7 +2,7 @@ import datetime
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
-from models import BaseModel
+from core.models import BaseModel
 
 BREWERY_TYPES = [
     ("Brewery Only", "Brewery Only"),

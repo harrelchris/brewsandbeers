@@ -1,7 +1,7 @@
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 
-from models import BaseModel
+from core.models import BaseModel
 
 TYPES = [
     ("Ale", "Ale"),
