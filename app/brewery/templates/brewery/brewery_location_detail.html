@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}{{ brewery.name }}{% endblock %}
+
+{% block content %}
+  <h1>{{ brewery.name }} in {{ brewerylocation.city }}, {{ brewerylocation.state }}</h1>
+  <h2>Address</h2>
+  <p>{{ brewerylocation.street }} {{ brewerylocation.city }}, {{ brewerylocation.state }}</p>
+  <h2>Images</h2>
+  <p><a href="{% url 'brewery:brewery_location_image_create' brewery.pk brewerylocation.pk %}">Add location image</a></p>
+  {% if image_list %}
+    {% for image in image_list %}
+      <img src="{{ image.image.url }}" alt="{{ brewery.name }}">
+    {% endfor %}
+  {% endif %}
+  <h2>Reviews</h2>
+  <p><a href="{% url 'brewery:brewery_location_review_create' brewery.pk brewerylocation.pk %}">Review this location</a></p>
+  {% if review_list %}
+    <ul>
+    {% for review in review_list %}
+      <li>{{ review.rating }}  - {{ review.text|truncatechars:15 }} by {{ review.user.username }} on {{ review.created_at.date }}</li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>No reviews yet. Be the first to submit a review.</p>
+  {% endif %}
+  <p>Back to <a href="{% url 'brewery:brewery_detail' brewery.pk %}">{{ brewery.name }}</a></p>
+{% endblock %}
