@@ -7,9 +7,16 @@
   <p>Founded in {{ brewery.founded }}</p>
   {% if user.is_authenticated %}
     <p>
+      <a href="{% url 'brewery:brewery_image_create' brewery.pk %}">Add Image</a> -
+      <a href="{% url 'brewery:brewery_location_create' brewery.pk %}">Add Location</a> -
       <a href="{% url 'brewery:brewery_update' brewery.pk %}">Update</a> -
       <a href="{% url 'brewery:brewery_delete' brewery.pk %}">Delete</a>
     </p>
+  {% endif %}
+  {% if image_list %}
+    {% for image in image_list %}
+      <img src="{{ image.image.url }}" alt="{{ image.brewery.name }}">
+    {% endfor %}
   {% endif %}
   <h2>Beers</h2>
   {% if beer_list %}
@@ -20,13 +27,14 @@
     </ul>
   {% else %}
   {% endif %}
-  {% if review_list %}
+  <h2>Locations</h2>
+  {% if location_list %}
     <ul>
-      {% for review in review_list %}
-        <li>Rated {{ review.rating }} by {{ review.user.username }}</li>
+      {% for location in location_list %}
+        <li><a href="{% url 'brewery:brewery_location_detail' brewery.pk location.pk %}">{{ location.street }} {{ location.city }}, {{ location.state }}</a></li>
       {% endfor %}
     </ul>
   {% else %}
-    <p>No review yet. Be the <a href="{% url 'brewery:review_create' brewery.pk %}">first!</a></p>
+    <p>No locations yet. Add one <a href="{% url 'brewery:br' brewery.pk %}">here.</a></p>
   {% endif %}
 {% endblock %}
