@@ -36,7 +36,7 @@ class Brewery(BaseModel):
         validators=[
             MinValueValidator(1829),  # Yuengling founded in 1829
             MaxValueValidator(datetime.date.today().year),
-        ]
+        ],
     )
 
     def __str__(self):

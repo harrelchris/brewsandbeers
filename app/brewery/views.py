@@ -26,8 +26,12 @@ class BreweryDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["beer_list"] = Beer.objects.filter(brewery=self.get_object())
-        context["image_list"] = models.BreweryImage.objects.filter(brewery=self.get_object())
-        context["location_list"] = models.BreweryLocation.objects.filter(brewery=self.get_object())
+        context["image_list"] = models.BreweryImage.objects.filter(
+            brewery=self.get_object(),
+        )
+        context["location_list"] = models.BreweryLocation.objects.filter(
+            brewery=self.get_object(),
+        )
         return context
 
 
@@ -69,7 +73,10 @@ class BreweryImageCreateView(LoginRequiredMixin, CreateView):
     ]
 
     def get_success_url(self):
-        return reverse_lazy("brewery:brewery_detail", kwargs={"pk": self.object.brewery.pk})
+        return reverse_lazy(
+            "brewery:brewery_detail",
+            kwargs={"pk": self.object.brewery.pk},
+        )
 
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -101,7 +108,7 @@ class BreweryLocationCreateView(LoginRequiredMixin, CreateView):
             kwargs={
                 "pk": self.object.brewery.pk,
                 "location_pk": self.object.pk,
-            }
+            },
         )
 
     def get_context_data(self, **kwargs):
@@ -121,8 +128,12 @@ class BreweryLocationDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["brewery"] = models.Brewery.objects.get(pk=self.object.brewery.pk)
-        context["image_list"] = models.BreweryLocationImage.objects.filter(brewery_location=self.get_object())
-        context["review_list"] = models.BreweryLocationReview.objects.filter(brewery_location=self.get_object())
+        context["image_list"] = models.BreweryLocationImage.objects.filter(
+            brewery_location=self.get_object(),
+        )
+        context["review_list"] = models.BreweryLocationReview.objects.filter(
+            brewery_location=self.get_object(),
+        )
         return context
 
 
@@ -139,17 +150,21 @@ class BreweryLocationImageCreateView(LoginRequiredMixin, CreateView):
             kwargs={
                 "pk": self.object.brewery_location.brewery.pk,
                 "location_pk": self.object.brewery_location.pk,
-            }
+            },
         )
 
     def form_valid(self, form):
-        form.instance.brewery_location = models.BreweryLocation.objects.get(pk=self.kwargs["location_pk"])
+        form.instance.brewery_location = models.BreweryLocation.objects.get(
+            pk=self.kwargs["location_pk"],
+        )
         return super().form_valid(form)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["brewery"] = models.Brewery.objects.get(pk=self.kwargs["pk"])
-        context["brewery_location"] = models.BreweryLocation.objects.get(pk=self.kwargs["location_pk"])
+        context["brewery_location"] = models.BreweryLocation.objects.get(
+            pk=self.kwargs["location_pk"],
+        )
         return context
 
 
@@ -167,16 +182,20 @@ class BreweryLocationReviewCreateView(LoginRequiredMixin, CreateView):
             kwargs={
                 "pk": self.object.brewery_location.brewery.pk,
                 "location_pk": self.object.brewery_location.pk,
-            }
+            },
         )
 
     def form_valid(self, form):
         form.instance.user = self.request.user
-        form.instance.brewery_location = models.BreweryLocation.objects.get(pk=self.kwargs["location_pk"])
+        form.instance.brewery_location = models.BreweryLocation.objects.get(
+            pk=self.kwargs["location_pk"],
+        )
         return super().form_valid(form)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["brewery"] = models.Brewery.objects.get(pk=self.kwargs["pk"])
-        context["brewery_location"] = models.BreweryLocation.objects.get(pk=self.kwargs["location_pk"])
+        context["brewery_location"] = models.BreweryLocation.objects.get(
+            pk=self.kwargs["location_pk"],
+        )
         return context

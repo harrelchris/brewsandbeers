@@ -10,6 +10,14 @@ urlpatterns = [
     path("<str:pk>/", views.BeerDetailView.as_view(), name="beer_detail"),
     path("update/<str:pk>/", views.BeerUpdateView.as_view(), name="beer_update"),
     path("delete/<str:pk>/", views.BeerDeleteView.as_view(), name="beer_delete"),
-    path("<str:pk>/review/create/", views.ReviewCreateView.as_view(), name="review_create"),
-    path("<str:pk>/image/create/", views.ImageCreateView.as_view(), name="image_create"),
+    path(
+        "<str:pk>/review/create/",
+        views.ReviewCreateView.as_view(),
+        name="review_create",
+    ),
+    path(
+        "<str:pk>/image/create/",
+        views.ImageCreateView.as_view(),
+        name="image_create",
+    ),
 ]

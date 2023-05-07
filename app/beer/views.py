@@ -33,8 +33,12 @@ class BeerDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["brewery"] = Brewery.objects.get(pk=self.get_object().brewery.pk)
-        context["review_list"] = models.BeerReview.objects.filter(beer_id=self.kwargs["pk"])
-        context["image_list"] = models.BeerImage.objects.filter(beer_id=self.kwargs["pk"])
+        context["review_list"] = models.BeerReview.objects.filter(
+            beer_id=self.kwargs["pk"],
+        )
+        context["image_list"] = models.BeerImage.objects.filter(
+            beer_id=self.kwargs["pk"],
+        )
         return context
 
 
