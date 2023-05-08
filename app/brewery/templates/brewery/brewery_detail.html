@@ -35,6 +35,6 @@
       {% endfor %}
     </ul>
   {% else %}
-    <p>No locations yet. Add one <a href="{% url 'brewery:br' brewery.pk %}">here.</a></p>
+    <p>No locations yet. Add one <a href="{% url 'brewery:brewery_location_create' brewery.pk %}">here.</a></p>
   {% endif %}
 {% endblock %}
