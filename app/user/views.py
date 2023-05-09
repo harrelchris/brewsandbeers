@@ -58,7 +58,9 @@ class ProfileView(LoginRequiredMixin, TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["beer_reviews"] = BeerReview.objects.filter(user=self.request.user)
-        context["location_reviews"] = LocationReview.objects.filter(user=self.request.user)
+        context["location_reviews"] = LocationReview.objects.filter(
+            user=self.request.user,
+        )
         return context
 
 
@@ -69,5 +71,7 @@ class UserDetail(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["beer_reviews"] = BeerReview.objects.filter(user_id=self.kwargs["pk"])
-        context["location_reviews"] = LocationReview.objects.filter(user_id=self.kwargs["pk"])
+        context["location_reviews"] = LocationReview.objects.filter(
+            user_id=self.kwargs["pk"],
+        )
         return context

@@ -66,7 +66,10 @@ class ImageCreate(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse_lazy("location:location_detail", kwargs={"pk": self.object.location.pk})
+        return reverse_lazy(
+            "location:location_detail",
+            kwargs={"pk": self.object.location.pk},
+        )
 
 
 class ReviewCreate(LoginRequiredMixin, CreateView):
@@ -88,4 +91,7 @@ class ReviewCreate(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse_lazy("location:location_detail", kwargs={"pk": self.object.location.pk})
+        return reverse_lazy(
+            "location:location_detail",
+            kwargs={"pk": self.object.location.pk},
+        )

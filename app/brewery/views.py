@@ -62,4 +62,7 @@ class ImageCreate(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse_lazy("brewery:brewery_detail", kwargs={"pk": self.object.brewery.pk})
+        return reverse_lazy(
+            "brewery:brewery_detail",
+            kwargs={"pk": self.object.brewery.pk},
+        )
