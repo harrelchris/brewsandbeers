@@ -9,12 +9,12 @@
 
   <h2>Images</h2>
   {% if images %}
-    <p><a href="{% url 'image:image_create' 'location' location.pk %}">Submit an image</a></p>
+    <p><a href="{% url 'location:image_create' location.pk %}">Submit an image</a></p>
     {% for image in images %}
       <img src="{{ image.image.url }}" alt="{{ location.brewery.name }}">
     {% endfor %}
   {% else %}
-    <p>No images yet. Submit one <a href="{% url 'image:image_create' 'location' location.pk %}">here.</a></p>
+    <p>No images yet. Submit one <a href="{% url 'location:image_create' location.pk %}">here.</a></p>
   {% endif %}
 
   <h2>Reviews</h2>
