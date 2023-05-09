@@ -43,5 +43,10 @@ if not defined DJANGO_SUPERUSER_USERNAME (
 python app\manage.py createsuperuser --noinput
 
 :: Load data
+python app/manage.py loaddata users
 python app/manage.py loaddata breweries
+python app/manage.py loaddata brewery_images
+python app/manage.py loaddata locations
+python app/manage.py loaddata location_images
+python app/manage.py loaddata location_reviews
 python app/manage.py loaddata beers
