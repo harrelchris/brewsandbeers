@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "beer",
     "brewery",
     "index",
+    "location",
     "user",
 ]
 

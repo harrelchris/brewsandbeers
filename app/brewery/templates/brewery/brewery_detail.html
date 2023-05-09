@@ -5,36 +5,38 @@
 {% block content %}
   <h1>{{ brewery.name }}</h1>
   <p>Founded in {{ brewery.founded }}</p>
-  {% if user.is_authenticated %}
-    <p>
-      <a href="{% url 'brewery:brewery_image_create' brewery.pk %}">Add Image</a> -
-      <a href="{% url 'brewery:brewery_location_create' brewery.pk %}">Add Location</a> -
-      <a href="{% url 'brewery:brewery_update' brewery.pk %}">Update</a> -
-      <a href="{% url 'brewery:brewery_delete' brewery.pk %}">Delete</a>
-    </p>
-  {% endif %}
-  {% if image_list %}
-    {% for image in image_list %}
+
+  <h2>Images</h2>
+  {% if images %}
+    <p><a href="{% url 'brewery:image_create' brewery.pk %}">Submit an image</a></p>
+    {% for image in images %}
       <img src="{{ image.image.url }}" alt="{{ image.brewery.name }}">
     {% endfor %}
+  {% else %}
+    <p>No images yet. Submit one <a href="{% url 'brewery:image_create' brewery.pk %}">here.</a></p>
   {% endif %}
+
   <h2>Beers</h2>
-  {% if beer_list %}
+  {% if beers %}
+    <p><a href="{% url 'beer:beer_create' %}">Submit a beer</a></p>
     <ul>
-    {% for beer in beer_list %}
+    {% for beer in beers %}
       <li><a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a></li>
     {% endfor %}
     </ul>
   {% else %}
+    <p>No beers yet. Submit one <a href="{% url 'beer:beer_create' brewery.pk %}">here.</a></p>
   {% endif %}
+
   <h2>Locations</h2>
-  {% if location_list %}
+  {% if locations %}
+    <p><a href="{% url 'location:location_create' brewery.pk %}">Submit a location</a></p>
     <ul>
-      {% for location in location_list %}
-        <li><a href="{% url 'brewery:brewery_location_detail' brewery.pk location.pk %}">{{ location.street }} {{ location.city }}, {{ location.state }}</a></li>
-      {% endfor %}
+    {% for location in locations %}
+      <li><a href="{% url 'location:location_detail' location.pk %}">{{ location.street }} {{ location.city }}, {{ location.state }}</a></li>
+    {% endfor %}
     </ul>
   {% else %}
-    <p>No locations yet. Add one <a href="{% url 'brewery:brewery_location_create' brewery.pk %}">here.</a></p>
+    <p>No locations yet. Add one <a href="{% url 'location:location_create' brewery.pk %}">here.</a></p>
   {% endif %}
 {% endblock %}
