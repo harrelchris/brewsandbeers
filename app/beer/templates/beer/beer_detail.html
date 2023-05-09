@@ -11,29 +11,26 @@
   <p>IBU: {{ beer.ibu }}</p>
   <p>Color: {% if beer.color %}{{ beer.color }}{% else %}Unknown{% endif %}</p>
   <p>Description: {% if beer.description %}{{ beer.description }}{% else %}None{% endif %}</p>
-  {% if image_list %}
-    <p>Add a new image for this beer <a href="{% url 'beer:image_create' beer.pk %}">here</a></p>
-    {% for image in image_list %}
+
+  <h2>Images</h2>
+  {% if images %}
+    <p><a href="{% url 'beer:image_create' beer.pk %}">Submit an image</a></p>
+    {% for image in images %}
       <img src="{{ image.image.url }}" alt="{{ image.beer.name }} by {{ image.user.username }}">
     {% endfor %}
   {% else %}
-    <p>No images found. Upload one <a href="{% url 'beer:image_create' beer.pk %}">here</a></p>
+    <p>No images yet. Submit one <a href="{% url 'beer:image_create' beer.pk %}">here.</a></p>
   {% endif %}
-  {% if user.is_authenticated %}
-    <p>
-      <a href="{% url 'beer:image_create' beer.pk %}">Add Image</a> -
-      <a href="{% url 'beer:review_create' beer.pk %}">Review</a> -
-      <a href="{% url 'beer:beer_update' beer.pk %}">Update</a> -
-      <a href="{% url 'beer:beer_delete' beer.pk %}">Delete</a>
-    </p>
-  {% endif %}
-  {% if review_list %}
+
+  <h2>Reviews</h2>
+  {% if reviews %}
+    <p><a href="{% url 'beer:review_create' beer.pk %}">Submit a review</a></p>
     <ul>
-      {% for review in review_list %}
-        <li>Rated {{ review.rating }} by {{ review.user.username }}</li>
+      {% for review in reviews %}
+        <li>Rated {{ review.rating }} by {{ review.user.username }} on {{ review.created_at.date }}: {{ review.text }}</li>
       {% endfor %}
     </ul>
   {% else %}
-    <p>No review yet. Be the <a href="{% url 'beer:review_create' beer.pk %}">first!</a></p>
+    <p>No reviews yet. Submit one <a href="{% url 'beer:review_create' beer.pk %}">here.</a></p>
   {% endif %}
 {% endblock %}
