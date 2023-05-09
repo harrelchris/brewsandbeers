@@ -1,0 +1,5842 @@
+[
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 1,
+    "fields": {
+      "brewery": 1,
+      "street": "1337 Cherry Parkway",
+      "city": "Springfield",
+      "state": "New Hampshire",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 2,
+    "fields": {
+      "brewery": 1,
+      "street": "5880 First Way",
+      "city": "New York City",
+      "state": "Michigan",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 3,
+    "fields": {
+      "brewery": 1,
+      "street": "3865 Hill Way",
+      "city": "Bristol",
+      "state": "Idaho",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 4,
+    "fields": {
+      "brewery": 1,
+      "street": "8615 Forest Boulevard",
+      "city": "Marion",
+      "state": "Nebraska",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 5,
+    "fields": {
+      "brewery": 1,
+      "street": "3491 Hill Circle",
+      "city": "Auburn",
+      "state": "Kansas",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 6,
+    "fields": {
+      "brewery": 2,
+      "street": "2158 Sixth Circle",
+      "city": "Springfield",
+      "state": "Minnesota",
+      "type": "Beer Garden",
+      "tours": true,
+      "capacity": "< 10",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 7,
+    "fields": {
+      "brewery": 2,
+      "street": "7495 Fourth Road",
+      "city": "Houston",
+      "state": "Ohio",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 8,
+    "fields": {
+      "brewery": 2,
+      "street": "6835 Maple Circle",
+      "city": "Windsor",
+      "state": "Vermont",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 9,
+    "fields": {
+      "brewery": 2,
+      "street": "3142 Cherry Street",
+      "city": "San Antonio",
+      "state": "Maine",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 10,
+    "fields": {
+      "brewery": 2,
+      "street": "4302 Walnut Street",
+      "city": "Milton",
+      "state": "Florida",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 11,
+    "fields": {
+      "brewery": 3,
+      "street": "9789 Cedar Circle",
+      "city": "Liberty",
+      "state": "Minnesota",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 12,
+    "fields": {
+      "brewery": 3,
+      "street": "8159 First Lane",
+      "city": "Arlington",
+      "state": "Indiana",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 13,
+    "fields": {
+      "brewery": 3,
+      "street": "5809 Lincoln Trail",
+      "city": "Kingston",
+      "state": "Wisconsin",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 14,
+    "fields": {
+      "brewery": 3,
+      "street": "5401 Meadow Boulevard",
+      "city": "Liberty",
+      "state": "New Mexico",
+      "type": "Brewpub",
+      "tours": true,
+      "capacity": "> 100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 15,
+    "fields": {
+      "brewery": 3,
+      "street": "1450 Third Avenue",
+      "city": "Windsor",
+      "state": "Arkansas",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 16,
+    "fields": {
+      "brewery": 4,
+      "street": "7060 Vine Street",
+      "city": "Georgetown",
+      "state": "South Carolina",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 17,
+    "fields": {
+      "brewery": 4,
+      "street": "7318 Market Parkway",
+      "city": "Mansfield",
+      "state": "Idaho",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 18,
+    "fields": {
+      "brewery": 4,
+      "street": "6801 Cedar Circle",
+      "city": "Bristol",
+      "state": "South Carolina",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 19,
+    "fields": {
+      "brewery": 4,
+      "street": "4488 Hill Lane",
+      "city": "Trenton",
+      "state": "West Virginia",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 20,
+    "fields": {
+      "brewery": 4,
+      "street": "3342 Oak Parkway",
+      "city": "Clinton",
+      "state": "Arizona",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 21,
+    "fields": {
+      "brewery": 5,
+      "street": "8292 Adams Avenue",
+      "city": "Phoenix",
+      "state": "Minnesota",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 22,
+    "fields": {
+      "brewery": 5,
+      "street": "7148 Market Circle",
+      "city": "Bristol",
+      "state": "Maine",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 23,
+    "fields": {
+      "brewery": 5,
+      "street": "609 Jefferson Parkway",
+      "city": "Jacksonville",
+      "state": "Virginia",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 24,
+    "fields": {
+      "brewery": 5,
+      "street": "8716 Washington Road",
+      "city": "Marion",
+      "state": "New York",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 25,
+    "fields": {
+      "brewery": 5,
+      "street": "1676 Lake Parkway",
+      "city": "Burlington",
+      "state": "Hawaii",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 26,
+    "fields": {
+      "brewery": 6,
+      "street": "6443 Grant Boulevard",
+      "city": "Houston",
+      "state": "Utah",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 27,
+    "fields": {
+      "brewery": 6,
+      "street": "9260 High Trail",
+      "city": "Franklin",
+      "state": "Oklahoma",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 28,
+    "fields": {
+      "brewery": 6,
+      "street": "7781 Pine Hill",
+      "city": "Houston",
+      "state": "Washington",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 29,
+    "fields": {
+      "brewery": 6,
+      "street": "4355 Walnut Circle",
+      "city": "Auburn",
+      "state": "Indiana",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 30,
+    "fields": {
+      "brewery": 6,
+      "street": "5786 Sixth Road",
+      "city": "Bristol",
+      "state": "Utah",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 31,
+    "fields": {
+      "brewery": 7,
+      "street": "117 Sunset View Circle",
+      "city": "Bristol",
+      "state": "Montana",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 32,
+    "fields": {
+      "brewery": 7,
+      "street": "982 Elm Hill",
+      "city": "Salem",
+      "state": "Rhode Island",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 33,
+    "fields": {
+      "brewery": 7,
+      "street": "6360 Park Circle",
+      "city": "Monroe",
+      "state": "Michigan",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 34,
+    "fields": {
+      "brewery": 7,
+      "street": "6707 Lake Trail",
+      "city": "Chicago",
+      "state": "Wisconsin",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 35,
+    "fields": {
+      "brewery": 7,
+      "street": "9610 Grant Circle",
+      "city": "Pleasanton",
+      "state": "Pennsylvania",
+      "type": "Other",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 36,
+    "fields": {
+      "brewery": 8,
+      "street": "4191 Third Circle",
+      "city": "Marion",
+      "state": "Missouri",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 37,
+    "fields": {
+      "brewery": 8,
+      "street": "3096 Chestnut Drive",
+      "city": "Washington",
+      "state": "New Hampshire",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 38,
+    "fields": {
+      "brewery": 8,
+      "street": "9007 Meadow Boulevard",
+      "city": "Union",
+      "state": "Oregon",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 39,
+    "fields": {
+      "brewery": 8,
+      "street": "1908 Main Parkway",
+      "city": "Arlington",
+      "state": "Wyoming",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 40,
+    "fields": {
+      "brewery": 8,
+      "street": "7267 Park Drive",
+      "city": "Kingston",
+      "state": "Tennessee",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 41,
+    "fields": {
+      "brewery": 9,
+      "street": "6896 Jefferson Circle",
+      "city": "Oxford",
+      "state": "Alabama",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 42,
+    "fields": {
+      "brewery": 9,
+      "street": "4534 Sixth Way",
+      "city": "Chicago",
+      "state": "West Virginia",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 43,
+    "fields": {
+      "brewery": 9,
+      "street": "7053 Hill Way",
+      "city": "Houston",
+      "state": "Kentucky",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 44,
+    "fields": {
+      "brewery": 9,
+      "street": "7181 Sixth Trail",
+      "city": "Bristol",
+      "state": "Minnesota",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 45,
+    "fields": {
+      "brewery": 9,
+      "street": "7451 Grant Lane",
+      "city": "Springfield",
+      "state": "Kentucky",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 46,
+    "fields": {
+      "brewery": 10,
+      "street": "7659 Vine Trail",
+      "city": "San Jose",
+      "state": "Connecticut",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 47,
+    "fields": {
+      "brewery": 10,
+      "street": "1479 Maple Boulevard",
+      "city": "Washington",
+      "state": "Nevada",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 48,
+    "fields": {
+      "brewery": 10,
+      "street": "9285 Madison Avenue",
+      "city": "Dallas",
+      "state": "Minnesota",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 49,
+    "fields": {
+      "brewery": 10,
+      "street": "8410 Maple Lane",
+      "city": "Milton",
+      "state": "Tennessee",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 50,
+    "fields": {
+      "brewery": 10,
+      "street": "5278 Jackson Boulevard",
+      "city": "Salem",
+      "state": "Nebraska",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 51,
+    "fields": {
+      "brewery": 11,
+      "street": "1107 Jackson Road",
+      "city": "Dallas",
+      "state": "Kentucky",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 52,
+    "fields": {
+      "brewery": 11,
+      "street": "3876 Cherry Boulevard",
+      "city": "Auburn",
+      "state": "Utah",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 53,
+    "fields": {
+      "brewery": 11,
+      "street": "8876 Chestnut Road",
+      "city": "Kingston",
+      "state": "Vermont",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 54,
+    "fields": {
+      "brewery": 11,
+      "street": "6370 Chestnut Lane",
+      "city": "Austin",
+      "state": "Maine",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 55,
+    "fields": {
+      "brewery": 11,
+      "street": "9031 Sixth Drive",
+      "city": "Bedford",
+      "state": "Virginia",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 56,
+    "fields": {
+      "brewery": 12,
+      "street": "7094 Hill Trail",
+      "city": "Plymouth",
+      "state": "Oregon",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 57,
+    "fields": {
+      "brewery": 12,
+      "street": "404 Chestnut Street",
+      "city": "Salem",
+      "state": "Montana",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 58,
+    "fields": {
+      "brewery": 12,
+      "street": "6404 Sunset Way",
+      "city": "Houston",
+      "state": "Mississippi",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 59,
+    "fields": {
+      "brewery": 12,
+      "street": "982 Park Parkway",
+      "city": "Philadelphia",
+      "state": "Utah",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 60,
+    "fields": {
+      "brewery": 12,
+      "street": "5153 Broadway Street",
+      "city": "Bristol",
+      "state": "North Dakota",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 61,
+    "fields": {
+      "brewery": 13,
+      "street": "5591 Broadway Circle",
+      "city": "Bristol",
+      "state": "Georgia",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 62,
+    "fields": {
+      "brewery": 13,
+      "street": "6216 Washington Drive",
+      "city": "Marion",
+      "state": "Hawaii",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 63,
+    "fields": {
+      "brewery": 13,
+      "street": "6963 Madison Way",
+      "city": "San Antonio",
+      "state": "Ohio",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 64,
+    "fields": {
+      "brewery": 13,
+      "street": "8839 Walnut Road",
+      "city": "Kingston",
+      "state": "West Virginia",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 65,
+    "fields": {
+      "brewery": 13,
+      "street": "5607 Grant Hill",
+      "city": "Liberty",
+      "state": "Iowa",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 66,
+    "fields": {
+      "brewery": 14,
+      "street": "3162 Ridge Street",
+      "city": "Madison",
+      "state": "Kentucky",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 67,
+    "fields": {
+      "brewery": 14,
+      "street": "3894 Chestnut Circle",
+      "city": "Milton",
+      "state": "Maine",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 68,
+    "fields": {
+      "brewery": 14,
+      "street": "6040 Maple Way",
+      "city": "Greenville",
+      "state": "Colorado",
+      "type": "Other",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 69,
+    "fields": {
+      "brewery": 14,
+      "street": "581 Lake Lane",
+      "city": "Centerville",
+      "state": "Oklahoma",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 70,
+    "fields": {
+      "brewery": 14,
+      "street": "2091 Forest Road",
+      "city": "Oxford",
+      "state": "Wisconsin",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 71,
+    "fields": {
+      "brewery": 15,
+      "street": "7916 Cherry Circle",
+      "city": "Chester",
+      "state": "Kansas",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 72,
+    "fields": {
+      "brewery": 15,
+      "street": "9637 College Boulevard",
+      "city": "San Diego",
+      "state": "North Dakota",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 73,
+    "fields": {
+      "brewery": 15,
+      "street": "3747 Lake Avenue",
+      "city": "Auburn",
+      "state": "Louisiana",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 74,
+    "fields": {
+      "brewery": 15,
+      "street": "6160 Park Road",
+      "city": "Washington",
+      "state": "Oregon",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 75,
+    "fields": {
+      "brewery": 15,
+      "street": "2024 Park Road",
+      "city": "Burlington",
+      "state": "Utah",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 76,
+    "fields": {
+      "brewery": 16,
+      "street": "9114 Washington Hill",
+      "city": "Arlington",
+      "state": "Connecticut",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 77,
+    "fields": {
+      "brewery": 16,
+      "street": "2435 Ridge Parkway",
+      "city": "Philadelphia",
+      "state": "Oregon",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 78,
+    "fields": {
+      "brewery": 16,
+      "street": "4054 Sixth Road",
+      "city": "Pleasanton",
+      "state": "Iowa",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 79,
+    "fields": {
+      "brewery": 16,
+      "street": "1736 Forest Lane",
+      "city": "Bedford",
+      "state": "North Carolina",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 80,
+    "fields": {
+      "brewery": 16,
+      "street": "9889 Elm Way",
+      "city": "San Antonio",
+      "state": "Ohio",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 81,
+    "fields": {
+      "brewery": 17,
+      "street": "9278 Franklin Drive",
+      "city": "Pleasanton",
+      "state": "West Virginia",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 82,
+    "fields": {
+      "brewery": 17,
+      "street": "415 Cedar Way",
+      "city": "Centerville",
+      "state": "Rhode Island",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 83,
+    "fields": {
+      "brewery": 17,
+      "street": "1994 Washington Road",
+      "city": "Madison",
+      "state": "Massachusetts",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 84,
+    "fields": {
+      "brewery": 17,
+      "street": "5037 Vine Road",
+      "city": "Kingston",
+      "state": "New York",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 85,
+    "fields": {
+      "brewery": 17,
+      "street": "3110 Madison Boulevard",
+      "city": "Madison",
+      "state": "Texas",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 86,
+    "fields": {
+      "brewery": 18,
+      "street": "1638 Madison Drive",
+      "city": "Austin",
+      "state": "Massachusetts",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 87,
+    "fields": {
+      "brewery": 18,
+      "street": "604 High Road",
+      "city": "Salem",
+      "state": "Wisconsin",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 88,
+    "fields": {
+      "brewery": 18,
+      "street": "4057 Sunset View Road",
+      "city": "Columbus",
+      "state": "Alaska",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 89,
+    "fields": {
+      "brewery": 18,
+      "street": "185 Third Avenue",
+      "city": "Austin",
+      "state": "Texas",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 90,
+    "fields": {
+      "brewery": 18,
+      "street": "6257 Third Drive",
+      "city": "Bristol",
+      "state": "Minnesota",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 91,
+    "fields": {
+      "brewery": 19,
+      "street": "1066 Adams Avenue",
+      "city": "Houston",
+      "state": "Minnesota",
+      "type": "Brewpub",
+      "tours": true,
+      "capacity": "25-50",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 92,
+    "fields": {
+      "brewery": 19,
+      "street": "1603 First Road",
+      "city": "Marion",
+      "state": "Missouri",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 93,
+    "fields": {
+      "brewery": 19,
+      "street": "4678 Ridge Parkway",
+      "city": "Phoenix",
+      "state": "Arkansas",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 94,
+    "fields": {
+      "brewery": 19,
+      "street": "5106 Cherry Street",
+      "city": "Arlington",
+      "state": "Maryland",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 95,
+    "fields": {
+      "brewery": 19,
+      "street": "1371 College Avenue",
+      "city": "Oxford",
+      "state": "Maine",
+      "type": "Other",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 96,
+    "fields": {
+      "brewery": 20,
+      "street": "916 Chestnut Parkway",
+      "city": "Austin",
+      "state": "Oklahoma",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 97,
+    "fields": {
+      "brewery": 20,
+      "street": "4566 Hill Hill",
+      "city": "San Diego",
+      "state": "North Dakota",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 98,
+    "fields": {
+      "brewery": 20,
+      "street": "2905 Franklin Trail",
+      "city": "Mansfield",
+      "state": "Idaho",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 99,
+    "fields": {
+      "brewery": 20,
+      "street": "1040 Meadow Trail",
+      "city": "Washington",
+      "state": "Texas",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 100,
+    "fields": {
+      "brewery": 20,
+      "street": "6508 Jefferson Lane",
+      "city": "Marion",
+      "state": "Hawaii",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 101,
+    "fields": {
+      "brewery": 21,
+      "street": "1442 Grant Avenue",
+      "city": "Pleasanton",
+      "state": "New York",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 102,
+    "fields": {
+      "brewery": 21,
+      "street": "3257 Jefferson Hill",
+      "city": "Milton",
+      "state": "Arkansas",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 103,
+    "fields": {
+      "brewery": 21,
+      "street": "1660 Jefferson Way",
+      "city": "Monroe",
+      "state": "Hawaii",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 104,
+    "fields": {
+      "brewery": 21,
+      "street": "6117 Washington Boulevard",
+      "city": "Los Angeles",
+      "state": "Maine",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 105,
+    "fields": {
+      "brewery": 21,
+      "street": "2196 Jefferson Boulevard",
+      "city": "Liberty",
+      "state": "North Dakota",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 106,
+    "fields": {
+      "brewery": 22,
+      "street": "2574 First Lane",
+      "city": "New York City",
+      "state": "Texas",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 107,
+    "fields": {
+      "brewery": 22,
+      "street": "9216 Cedar Street",
+      "city": "Milton",
+      "state": "Washington",
+      "type": "Other",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 108,
+    "fields": {
+      "brewery": 22,
+      "street": "3214 Elm Boulevard",
+      "city": "Kingston",
+      "state": "Florida",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 109,
+    "fields": {
+      "brewery": 22,
+      "street": "4404 Lake Trail",
+      "city": "Georgetown",
+      "state": "Kansas",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 110,
+    "fields": {
+      "brewery": 22,
+      "street": "641 Pine Avenue",
+      "city": "Franklin",
+      "state": "Idaho",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 111,
+    "fields": {
+      "brewery": 23,
+      "street": "1155 Sunset Lane",
+      "city": "Clinton",
+      "state": "Utah",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 112,
+    "fields": {
+      "brewery": 23,
+      "street": "7166 Grant Circle",
+      "city": "Austin",
+      "state": "Florida",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 113,
+    "fields": {
+      "brewery": 23,
+      "street": "8136 Cedar Lane",
+      "city": "Georgetown",
+      "state": "Arkansas",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 114,
+    "fields": {
+      "brewery": 23,
+      "street": "9879 Madison Lane",
+      "city": "Clinton",
+      "state": "Kansas",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 115,
+    "fields": {
+      "brewery": 23,
+      "street": "9202 Franklin Trail",
+      "city": "Trenton",
+      "state": "Alabama",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 116,
+    "fields": {
+      "brewery": 24,
+      "street": "7897 Sunset Circle",
+      "city": "Dallas",
+      "state": "Oregon",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 117,
+    "fields": {
+      "brewery": 24,
+      "street": "2645 Main Avenue",
+      "city": "Phoenix",
+      "state": "Wisconsin",
+      "type": "Brewpub",
+      "tours": true,
+      "capacity": "< 10",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 118,
+    "fields": {
+      "brewery": 24,
+      "street": "2150 Cedar Circle",
+      "city": "Clinton",
+      "state": "Utah",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 119,
+    "fields": {
+      "brewery": 24,
+      "street": "4720 Main Parkway",
+      "city": "Burlington",
+      "state": "West Virginia",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 120,
+    "fields": {
+      "brewery": 24,
+      "street": "685 Jackson Boulevard",
+      "city": "Pleasanton",
+      "state": "Massachusetts",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 121,
+    "fields": {
+      "brewery": 25,
+      "street": "914 Hill Hill",
+      "city": "Kingston",
+      "state": "Kentucky",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 122,
+    "fields": {
+      "brewery": 25,
+      "street": "4558 Elm Circle",
+      "city": "San Jose",
+      "state": "North Carolina",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 123,
+    "fields": {
+      "brewery": 25,
+      "street": "5717 Adams Circle",
+      "city": "Kingston",
+      "state": "Alabama",
+      "type": "Taproom",
+      "tours": true,
+      "capacity": "25-50",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 124,
+    "fields": {
+      "brewery": 25,
+      "street": "4910 Cedar Way",
+      "city": "Clinton",
+      "state": "California",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 125,
+    "fields": {
+      "brewery": 25,
+      "street": "3668 Ridge Hill",
+      "city": "Liberty",
+      "state": "Missouri",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 126,
+    "fields": {
+      "brewery": 26,
+      "street": "7851 Hill Street",
+      "city": "San Diego",
+      "state": "Texas",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 127,
+    "fields": {
+      "brewery": 26,
+      "street": "4423 Washington Way",
+      "city": "Salem",
+      "state": "Michigan",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 128,
+    "fields": {
+      "brewery": 26,
+      "street": "6495 Grant Hill",
+      "city": "Philadelphia",
+      "state": "New Hampshire",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 129,
+    "fields": {
+      "brewery": 26,
+      "street": "6326 Maple Avenue",
+      "city": "Liberty",
+      "state": "North Carolina",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 130,
+    "fields": {
+      "brewery": 26,
+      "street": "8579 Franklin Road",
+      "city": "Columbus",
+      "state": "Florida",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 131,
+    "fields": {
+      "brewery": 27,
+      "street": "1883 Oak Trail",
+      "city": "Auburn",
+      "state": "North Carolina",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 132,
+    "fields": {
+      "brewery": 27,
+      "street": "5835 Washington Street",
+      "city": "Plymouth",
+      "state": "New York",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 133,
+    "fields": {
+      "brewery": 27,
+      "street": "5848 Madison Circle",
+      "city": "Oxford",
+      "state": "Oklahoma",
+      "type": "Other",
+      "tours": true,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 134,
+    "fields": {
+      "brewery": 27,
+      "street": "1254 Washington Avenue",
+      "city": "Kingston",
+      "state": "Michigan",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 135,
+    "fields": {
+      "brewery": 27,
+      "street": "7879 Cherry Lane",
+      "city": "San Diego",
+      "state": "Minnesota",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 136,
+    "fields": {
+      "brewery": 28,
+      "street": "1267 Jefferson Way",
+      "city": "Springfield",
+      "state": "South Carolina",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 137,
+    "fields": {
+      "brewery": 28,
+      "street": "9380 High Circle",
+      "city": "Fairview",
+      "state": "South Dakota",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 138,
+    "fields": {
+      "brewery": 28,
+      "street": "9730 Washington Boulevard",
+      "city": "Arlington",
+      "state": "South Dakota",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 139,
+    "fields": {
+      "brewery": 28,
+      "street": "948 Sixth Avenue",
+      "city": "Philadelphia",
+      "state": "Illinois",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 140,
+    "fields": {
+      "brewery": 28,
+      "street": "186 Maple Avenue",
+      "city": "Madison",
+      "state": "Kansas",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 141,
+    "fields": {
+      "brewery": 29,
+      "street": "9520 College Parkway",
+      "city": "Dallas",
+      "state": "West Virginia",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 142,
+    "fields": {
+      "brewery": 29,
+      "street": "896 Maple Hill",
+      "city": "Monroe",
+      "state": "Virginia",
+      "type": "Taproom",
+      "tours": true,
+      "capacity": "< 10",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 143,
+    "fields": {
+      "brewery": 29,
+      "street": "1862 Lake Trail",
+      "city": "Los Angeles",
+      "state": "California",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 144,
+    "fields": {
+      "brewery": 29,
+      "street": "417 Cherry Hill",
+      "city": "Trenton",
+      "state": "New Mexico",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 145,
+    "fields": {
+      "brewery": 29,
+      "street": "5033 Jefferson Lane",
+      "city": "Fairview",
+      "state": "Virginia",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 146,
+    "fields": {
+      "brewery": 30,
+      "street": "2788 Pine Trail",
+      "city": "Dallas",
+      "state": "Delaware",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 147,
+    "fields": {
+      "brewery": 30,
+      "street": "7890 Lincoln Lane",
+      "city": "Phoenix",
+      "state": "Texas",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 148,
+    "fields": {
+      "brewery": 30,
+      "street": "9012 Meadow Avenue",
+      "city": "Mansfield",
+      "state": "Kentucky",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 149,
+    "fields": {
+      "brewery": 30,
+      "street": "6892 Third Drive",
+      "city": "San Jose",
+      "state": "Alaska",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 150,
+    "fields": {
+      "brewery": 30,
+      "street": "3504 Sunset Trail",
+      "city": "Centerville",
+      "state": "Vermont",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 151,
+    "fields": {
+      "brewery": 31,
+      "street": "2218 Madison Avenue",
+      "city": "Austin",
+      "state": "Montana",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 152,
+    "fields": {
+      "brewery": 31,
+      "street": "3068 Chestnut Avenue",
+      "city": "Washington",
+      "state": "Tennessee",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 153,
+    "fields": {
+      "brewery": 31,
+      "street": "2521 Fourth Drive",
+      "city": "Columbus",
+      "state": "Minnesota",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 154,
+    "fields": {
+      "brewery": 31,
+      "street": "1707 Maple Avenue",
+      "city": "Auburn",
+      "state": "Tennessee",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 155,
+    "fields": {
+      "brewery": 31,
+      "street": "612 Vine Lane",
+      "city": "Plymouth",
+      "state": "Arkansas",
+      "type": "Brewpub",
+      "tours": true,
+      "capacity": "< 10",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 156,
+    "fields": {
+      "brewery": 32,
+      "street": "4456 Oak Street",
+      "city": "Washington",
+      "state": "California",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 157,
+    "fields": {
+      "brewery": 32,
+      "street": "1584 First Trail",
+      "city": "New York City",
+      "state": "Alaska",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 158,
+    "fields": {
+      "brewery": 32,
+      "street": "2373 First Circle",
+      "city": "Burlington",
+      "state": "New Hampshire",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 159,
+    "fields": {
+      "brewery": 32,
+      "street": "4826 Adams Trail",
+      "city": "Phoenix",
+      "state": "Arizona",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 160,
+    "fields": {
+      "brewery": 32,
+      "street": "3638 Elm Drive",
+      "city": "Franklin",
+      "state": "Florida",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 161,
+    "fields": {
+      "brewery": 33,
+      "street": "686 Pine Lane",
+      "city": "Mansfield",
+      "state": "North Dakota",
+      "type": "Brewery Only",
+      "tours": true,
+      "capacity": "50-100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 162,
+    "fields": {
+      "brewery": 33,
+      "street": "7694 Sunset View Drive",
+      "city": "Monroe",
+      "state": "Georgia",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 163,
+    "fields": {
+      "brewery": 33,
+      "street": "2480 Madison Road",
+      "city": "Marion",
+      "state": "New York",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 164,
+    "fields": {
+      "brewery": 33,
+      "street": "9188 Madison Trail",
+      "city": "Oxford",
+      "state": "Nebraska",
+      "type": "Beer Garden",
+      "tours": true,
+      "capacity": "50-100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 165,
+    "fields": {
+      "brewery": 33,
+      "street": "3583 Jackson Street",
+      "city": "San Diego",
+      "state": "Rhode Island",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 166,
+    "fields": {
+      "brewery": 34,
+      "street": "3210 Broadway Circle",
+      "city": "Liberty",
+      "state": "Connecticut",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 167,
+    "fields": {
+      "brewery": 34,
+      "street": "6036 Fourth Circle",
+      "city": "Chicago",
+      "state": "South Dakota",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 168,
+    "fields": {
+      "brewery": 34,
+      "street": "3961 First Parkway",
+      "city": "Georgetown",
+      "state": "Colorado",
+      "type": "Taproom",
+      "tours": true,
+      "capacity": "< 10",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 169,
+    "fields": {
+      "brewery": 34,
+      "street": "8051 Grant Drive",
+      "city": "Bristol",
+      "state": "Louisiana",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 170,
+    "fields": {
+      "brewery": 34,
+      "street": "399 Lake Boulevard",
+      "city": "Centerville",
+      "state": "Tennessee",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 171,
+    "fields": {
+      "brewery": 35,
+      "street": "809 Hill Parkway",
+      "city": "Milton",
+      "state": "Louisiana",
+      "type": "Other",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 172,
+    "fields": {
+      "brewery": 35,
+      "street": "2194 Sunset View Avenue",
+      "city": "Chester",
+      "state": "Montana",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 173,
+    "fields": {
+      "brewery": 35,
+      "street": "2919 First Boulevard",
+      "city": "Windsor",
+      "state": "Colorado",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 174,
+    "fields": {
+      "brewery": 35,
+      "street": "2762 Sixth Street",
+      "city": "Milton",
+      "state": "South Carolina",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 175,
+    "fields": {
+      "brewery": 35,
+      "street": "2777 High Road",
+      "city": "San Jose",
+      "state": "Arizona",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 176,
+    "fields": {
+      "brewery": 36,
+      "street": "6395 Vine Road",
+      "city": "Los Angeles",
+      "state": "Alaska",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 177,
+    "fields": {
+      "brewery": 36,
+      "street": "551 Market Parkway",
+      "city": "Plymouth",
+      "state": "Michigan",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 178,
+    "fields": {
+      "brewery": 36,
+      "street": "1528 Ridge Road",
+      "city": "Columbus",
+      "state": "North Dakota",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 179,
+    "fields": {
+      "brewery": 36,
+      "street": "8515 Sunset View Hill",
+      "city": "Milton",
+      "state": "Wisconsin",
+      "type": "Other",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 180,
+    "fields": {
+      "brewery": 36,
+      "street": "3439 Park Circle",
+      "city": "Centerville",
+      "state": "Kentucky",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 181,
+    "fields": {
+      "brewery": 37,
+      "street": "5189 First Way",
+      "city": "Dallas",
+      "state": "New Jersey",
+      "type": "Brewery Only",
+      "tours": true,
+      "capacity": "< 10",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 182,
+    "fields": {
+      "brewery": 37,
+      "street": "3268 Lincoln Hill",
+      "city": "Kingston",
+      "state": "Kentucky",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 183,
+    "fields": {
+      "brewery": 37,
+      "street": "2495 Fourth Lane",
+      "city": "Philadelphia",
+      "state": "New Mexico",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 184,
+    "fields": {
+      "brewery": 37,
+      "street": "5978 Jefferson Lane",
+      "city": "Jacksonville",
+      "state": "Rhode Island",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 185,
+    "fields": {
+      "brewery": 37,
+      "street": "8107 Main Avenue",
+      "city": "Pleasanton",
+      "state": "Connecticut",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 186,
+    "fields": {
+      "brewery": 38,
+      "street": "474 Broadway Road",
+      "city": "Trenton",
+      "state": "South Dakota",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 187,
+    "fields": {
+      "brewery": 38,
+      "street": "1512 Broadway Parkway",
+      "city": "Mansfield",
+      "state": "Utah",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 188,
+    "fields": {
+      "brewery": 38,
+      "street": "3041 Lake Road",
+      "city": "Georgetown",
+      "state": "Connecticut",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 189,
+    "fields": {
+      "brewery": 38,
+      "street": "323 Cedar Hill",
+      "city": "Kingston",
+      "state": "Montana",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 190,
+    "fields": {
+      "brewery": 38,
+      "street": "2798 Adams Hill",
+      "city": "Columbus",
+      "state": "Hawaii",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 191,
+    "fields": {
+      "brewery": 39,
+      "street": "3103 Elm Avenue",
+      "city": "Jacksonville",
+      "state": "Florida",
+      "type": "Taproom",
+      "tours": true,
+      "capacity": "10-25",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 192,
+    "fields": {
+      "brewery": 39,
+      "street": "1794 Cedar Boulevard",
+      "city": "Franklin",
+      "state": "Nebraska",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 193,
+    "fields": {
+      "brewery": 39,
+      "street": "564 Third Street",
+      "city": "Liberty",
+      "state": "Oklahoma",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 194,
+    "fields": {
+      "brewery": 39,
+      "street": "2138 Third Way",
+      "city": "Trenton",
+      "state": "Tennessee",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 195,
+    "fields": {
+      "brewery": 39,
+      "street": "1055 Cedar Boulevard",
+      "city": "Marion",
+      "state": "Texas",
+      "type": "Brewpub",
+      "tours": true,
+      "capacity": "50-100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 196,
+    "fields": {
+      "brewery": 40,
+      "street": "831 Oak Street",
+      "city": "Milton",
+      "state": "New Hampshire",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 197,
+    "fields": {
+      "brewery": 40,
+      "street": "3034 Jefferson Parkway",
+      "city": "Trenton",
+      "state": "Illinois",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 198,
+    "fields": {
+      "brewery": 40,
+      "street": "4837 Broadway Street",
+      "city": "Marion",
+      "state": "Tennessee",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 199,
+    "fields": {
+      "brewery": 40,
+      "street": "2038 First Lane",
+      "city": "Bedford",
+      "state": "West Virginia",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 200,
+    "fields": {
+      "brewery": 40,
+      "street": "5584 Washington Avenue",
+      "city": "Monroe",
+      "state": "Iowa",
+      "type": "Other",
+      "tours": true,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 201,
+    "fields": {
+      "brewery": 41,
+      "street": "6658 Franklin Drive",
+      "city": "Bristol",
+      "state": "Wyoming",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 202,
+    "fields": {
+      "brewery": 41,
+      "street": "722 Hill Boulevard",
+      "city": "Clinton",
+      "state": "Utah",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 203,
+    "fields": {
+      "brewery": 41,
+      "street": "5215 Ridge Avenue",
+      "city": "New York City",
+      "state": "Texas",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 204,
+    "fields": {
+      "brewery": 41,
+      "street": "9206 Grant Way",
+      "city": "Philadelphia",
+      "state": "Wyoming",
+      "type": "Brewery Only",
+      "tours": true,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 205,
+    "fields": {
+      "brewery": 41,
+      "street": "3617 Second Way",
+      "city": "Columbus",
+      "state": "New Hampshire",
+      "type": "Other",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 206,
+    "fields": {
+      "brewery": 42,
+      "street": "3840 Sunset View Circle",
+      "city": "Milton",
+      "state": "West Virginia",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 207,
+    "fields": {
+      "brewery": 42,
+      "street": "3511 Vine Way",
+      "city": "Centerville",
+      "state": "New York",
+      "type": "Brewery Only",
+      "tours": true,
+      "capacity": "25-50",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 208,
+    "fields": {
+      "brewery": 42,
+      "street": "5845 Third Boulevard",
+      "city": "Washington",
+      "state": "New Hampshire",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 209,
+    "fields": {
+      "brewery": 42,
+      "street": "1978 Cherry Trail",
+      "city": "Philadelphia",
+      "state": "North Carolina",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 210,
+    "fields": {
+      "brewery": 42,
+      "street": "3832 Madison Lane",
+      "city": "Houston",
+      "state": "North Carolina",
+      "type": "Other",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 211,
+    "fields": {
+      "brewery": 43,
+      "street": "8544 Ridge Drive",
+      "city": "Philadelphia",
+      "state": "South Carolina",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 212,
+    "fields": {
+      "brewery": 43,
+      "street": "7609 Vine Way",
+      "city": "Windsor",
+      "state": "Wyoming",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 213,
+    "fields": {
+      "brewery": 43,
+      "street": "9930 Lincoln Circle",
+      "city": "San Antonio",
+      "state": "Colorado",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 214,
+    "fields": {
+      "brewery": 43,
+      "street": "9860 Sunset Hill",
+      "city": "Philadelphia",
+      "state": "Texas",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 215,
+    "fields": {
+      "brewery": 43,
+      "street": "4672 Broadway Way",
+      "city": "Philadelphia",
+      "state": "Wisconsin",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 216,
+    "fields": {
+      "brewery": 44,
+      "street": "191 Jefferson Avenue",
+      "city": "Milton",
+      "state": "Colorado",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 217,
+    "fields": {
+      "brewery": 44,
+      "street": "3677 Adams Avenue",
+      "city": "San Jose",
+      "state": "Mississippi",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 218,
+    "fields": {
+      "brewery": 44,
+      "street": "7982 Franklin Circle",
+      "city": "Chester",
+      "state": "Wisconsin",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 219,
+    "fields": {
+      "brewery": 44,
+      "street": "7264 Washington Hill",
+      "city": "Salem",
+      "state": "Oklahoma",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 220,
+    "fields": {
+      "brewery": 44,
+      "street": "6891 Jackson Way",
+      "city": "Union",
+      "state": "Oklahoma",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 221,
+    "fields": {
+      "brewery": 45,
+      "street": "6167 Vine Street",
+      "city": "Milton",
+      "state": "Florida",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 222,
+    "fields": {
+      "brewery": 45,
+      "street": "1181 Jefferson Road",
+      "city": "Burlington",
+      "state": "Oregon",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 223,
+    "fields": {
+      "brewery": 45,
+      "street": "1000 Third Hill",
+      "city": "Bristol",
+      "state": "New York",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 224,
+    "fields": {
+      "brewery": 45,
+      "street": "9508 Maple Drive",
+      "city": "Bristol",
+      "state": "Missouri",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 225,
+    "fields": {
+      "brewery": 45,
+      "street": "9784 Fourth Trail",
+      "city": "Chester",
+      "state": "Minnesota",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 226,
+    "fields": {
+      "brewery": 46,
+      "street": "666 Jefferson Way",
+      "city": "Milton",
+      "state": "Nevada",
+      "type": "Taproom",
+      "tours": true,
+      "capacity": "50-100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 227,
+    "fields": {
+      "brewery": 46,
+      "street": "4208 Cherry Drive",
+      "city": "Bristol",
+      "state": "Georgia",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 228,
+    "fields": {
+      "brewery": 46,
+      "street": "3296 Adams Drive",
+      "city": "Clinton",
+      "state": "West Virginia",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 229,
+    "fields": {
+      "brewery": 46,
+      "street": "4821 Sunset View Road",
+      "city": "Washington",
+      "state": "West Virginia",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 230,
+    "fields": {
+      "brewery": 46,
+      "street": "5122 Cherry Way",
+      "city": "Auburn",
+      "state": "Iowa",
+      "type": "Other",
+      "tours": true,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 231,
+    "fields": {
+      "brewery": 47,
+      "street": "3866 Sunset Trail",
+      "city": "Fairview",
+      "state": "New York",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 232,
+    "fields": {
+      "brewery": 47,
+      "street": "8646 Jefferson Trail",
+      "city": "Los Angeles",
+      "state": "New York",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 233,
+    "fields": {
+      "brewery": 47,
+      "street": "6278 Park Street",
+      "city": "Bedford",
+      "state": "Tennessee",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 234,
+    "fields": {
+      "brewery": 47,
+      "street": "629 Walnut Drive",
+      "city": "New York City",
+      "state": "West Virginia",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 235,
+    "fields": {
+      "brewery": 47,
+      "street": "7613 Meadow Circle",
+      "city": "Chester",
+      "state": "Rhode Island",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 236,
+    "fields": {
+      "brewery": 48,
+      "street": "1931 Broadway Street",
+      "city": "Milton",
+      "state": "North Carolina",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 237,
+    "fields": {
+      "brewery": 48,
+      "street": "9269 Sunset View Drive",
+      "city": "Trenton",
+      "state": "Tennessee",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 238,
+    "fields": {
+      "brewery": 48,
+      "street": "9596 Walnut Road",
+      "city": "Oxford",
+      "state": "Kentucky",
+      "type": "Taproom",
+      "tours": true,
+      "capacity": "50-100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 239,
+    "fields": {
+      "brewery": 48,
+      "street": "5151 High Street",
+      "city": "Greenville",
+      "state": "Delaware",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 240,
+    "fields": {
+      "brewery": 48,
+      "street": "1745 Market Drive",
+      "city": "Mansfield",
+      "state": "South Carolina",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 241,
+    "fields": {
+      "brewery": 49,
+      "street": "8261 Jackson Street",
+      "city": "Liberty",
+      "state": "Georgia",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 242,
+    "fields": {
+      "brewery": 49,
+      "street": "303 College Parkway",
+      "city": "Chicago",
+      "state": "Michigan",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 243,
+    "fields": {
+      "brewery": 49,
+      "street": "5331 Sixth Way",
+      "city": "Kingston",
+      "state": "Minnesota",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 244,
+    "fields": {
+      "brewery": 49,
+      "street": "3632 Jackson Hill",
+      "city": "Dallas",
+      "state": "North Dakota",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 245,
+    "fields": {
+      "brewery": 49,
+      "street": "8146 Walnut Drive",
+      "city": "Salem",
+      "state": "Louisiana",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 246,
+    "fields": {
+      "brewery": 50,
+      "street": "3177 High Trail",
+      "city": "Austin",
+      "state": "Georgia",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 247,
+    "fields": {
+      "brewery": 50,
+      "street": "2384 Jackson Way",
+      "city": "Centerville",
+      "state": "South Dakota",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 248,
+    "fields": {
+      "brewery": 50,
+      "street": "5561 Franklin Circle",
+      "city": "Auburn",
+      "state": "California",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 249,
+    "fields": {
+      "brewery": 50,
+      "street": "6566 Market Circle",
+      "city": "Phoenix",
+      "state": "Georgia",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 250,
+    "fields": {
+      "brewery": 50,
+      "street": "1288 Jefferson Road",
+      "city": "San Diego",
+      "state": "Colorado",
+      "type": "Taproom",
+      "tours": true,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 251,
+    "fields": {
+      "brewery": 51,
+      "street": "8827 Walnut Trail",
+      "city": "Centerville",
+      "state": "Idaho",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 252,
+    "fields": {
+      "brewery": 51,
+      "street": "8861 Jefferson Parkway",
+      "city": "Fairview",
+      "state": "Maine",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 253,
+    "fields": {
+      "brewery": 51,
+      "street": "9990 Cedar Street",
+      "city": "Bedford",
+      "state": "Delaware",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 254,
+    "fields": {
+      "brewery": 51,
+      "street": "6708 High Parkway",
+      "city": "San Antonio",
+      "state": "New Hampshire",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 255,
+    "fields": {
+      "brewery": 51,
+      "street": "2946 Oak Circle",
+      "city": "New York City",
+      "state": "Massachusetts",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 256,
+    "fields": {
+      "brewery": 52,
+      "street": "4650 Ridge Hill",
+      "city": "Union",
+      "state": "Wisconsin",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 257,
+    "fields": {
+      "brewery": 52,
+      "street": "2508 Ridgeview Way",
+      "city": "Austin",
+      "state": "Pennsylvania",
+      "type": "Other",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 258,
+    "fields": {
+      "brewery": 52,
+      "street": "2512 Adams Road",
+      "city": "Clinton",
+      "state": "Mississippi",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 259,
+    "fields": {
+      "brewery": 52,
+      "street": "6345 Park Avenue",
+      "city": "Arlington",
+      "state": "Colorado",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 260,
+    "fields": {
+      "brewery": 52,
+      "street": "2091 Pine Lane",
+      "city": "Jacksonville",
+      "state": "Nebraska",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 261,
+    "fields": {
+      "brewery": 53,
+      "street": "4579 Walnut Avenue",
+      "city": "Chicago",
+      "state": "Ohio",
+      "type": "Taproom",
+      "tours": true,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 262,
+    "fields": {
+      "brewery": 53,
+      "street": "1621 Madison Lane",
+      "city": "Kingston",
+      "state": "Rhode Island",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 263,
+    "fields": {
+      "brewery": 53,
+      "street": "7097 Forest Parkway",
+      "city": "Columbus",
+      "state": "Oklahoma",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 264,
+    "fields": {
+      "brewery": 53,
+      "street": "6443 Cherry Lane",
+      "city": "Bedford",
+      "state": "Maryland",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 265,
+    "fields": {
+      "brewery": 53,
+      "street": "5665 First Boulevard",
+      "city": "Bedford",
+      "state": "South Dakota",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 266,
+    "fields": {
+      "brewery": 54,
+      "street": "6116 Ridge Circle",
+      "city": "San Antonio",
+      "state": "Louisiana",
+      "type": "Brewpub",
+      "tours": true,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 267,
+    "fields": {
+      "brewery": 54,
+      "street": "9781 Cedar Way",
+      "city": "Burlington",
+      "state": "Delaware",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 268,
+    "fields": {
+      "brewery": 54,
+      "street": "3552 High Way",
+      "city": "Oxford",
+      "state": "New Hampshire",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 269,
+    "fields": {
+      "brewery": 54,
+      "street": "2995 Sunset View Trail",
+      "city": "Dallas",
+      "state": "Oklahoma",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 270,
+    "fields": {
+      "brewery": 54,
+      "street": "9176 Lake Parkway",
+      "city": "Fairview",
+      "state": "Arkansas",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 271,
+    "fields": {
+      "brewery": 55,
+      "street": "1580 Maple Circle",
+      "city": "San Antonio",
+      "state": "Illinois",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 272,
+    "fields": {
+      "brewery": 55,
+      "street": "5256 Lincoln Avenue",
+      "city": "Philadelphia",
+      "state": "Alaska",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 273,
+    "fields": {
+      "brewery": 55,
+      "street": "7834 Pine Lane",
+      "city": "Kingston",
+      "state": "Delaware",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 274,
+    "fields": {
+      "brewery": 55,
+      "street": "4099 Hill Hill",
+      "city": "Georgetown",
+      "state": "New York",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 275,
+    "fields": {
+      "brewery": 55,
+      "street": "2273 Jefferson Boulevard",
+      "city": "Bristol",
+      "state": "Maryland",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 276,
+    "fields": {
+      "brewery": 56,
+      "street": "4560 Hill Avenue",
+      "city": "Columbus",
+      "state": "Washington",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 277,
+    "fields": {
+      "brewery": 56,
+      "street": "9580 Park Circle",
+      "city": "Monroe",
+      "state": "Alaska",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 278,
+    "fields": {
+      "brewery": 56,
+      "street": "1713 Maple Street",
+      "city": "Burlington",
+      "state": "Alabama",
+      "type": "Other",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 279,
+    "fields": {
+      "brewery": 56,
+      "street": "4650 Oak Drive",
+      "city": "Centerville",
+      "state": "Wyoming",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 280,
+    "fields": {
+      "brewery": 56,
+      "street": "3165 Madison Street",
+      "city": "Fairview",
+      "state": "Texas",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 281,
+    "fields": {
+      "brewery": 57,
+      "street": "8237 Jefferson Drive",
+      "city": "Auburn",
+      "state": "Pennsylvania",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 282,
+    "fields": {
+      "brewery": 57,
+      "street": "9178 Ridge Road",
+      "city": "Greenville",
+      "state": "Nebraska",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 283,
+    "fields": {
+      "brewery": 57,
+      "street": "2757 Ridge Avenue",
+      "city": "Milton",
+      "state": "Alaska",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 284,
+    "fields": {
+      "brewery": 57,
+      "street": "8537 Sunset Street",
+      "city": "Windsor",
+      "state": "Virginia",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 285,
+    "fields": {
+      "brewery": 57,
+      "street": "2025 Sunset Parkway",
+      "city": "Trenton",
+      "state": "Kansas",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 286,
+    "fields": {
+      "brewery": 58,
+      "street": "7227 Broadway Lane",
+      "city": "Jacksonville",
+      "state": "Utah",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 287,
+    "fields": {
+      "brewery": 58,
+      "street": "4249 Sunset View Boulevard",
+      "city": "Mansfield",
+      "state": "Georgia",
+      "type": "Other",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 288,
+    "fields": {
+      "brewery": 58,
+      "street": "3405 Lincoln Avenue",
+      "city": "Houston",
+      "state": "Utah",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 289,
+    "fields": {
+      "brewery": 58,
+      "street": "2692 Meadow Parkway",
+      "city": "Bedford",
+      "state": "Ohio",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 290,
+    "fields": {
+      "brewery": 58,
+      "street": "4136 Oak Drive",
+      "city": "Washington",
+      "state": "Pennsylvania",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 291,
+    "fields": {
+      "brewery": 59,
+      "street": "5960 Meadow Avenue",
+      "city": "San Diego",
+      "state": "Oklahoma",
+      "type": "Other",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 292,
+    "fields": {
+      "brewery": 59,
+      "street": "9893 Vine Street",
+      "city": "Plymouth",
+      "state": "California",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 293,
+    "fields": {
+      "brewery": 59,
+      "street": "8999 Cedar Trail",
+      "city": "Plymouth",
+      "state": "Illinois",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 294,
+    "fields": {
+      "brewery": 59,
+      "street": "9348 Grant Way",
+      "city": "Oxford",
+      "state": "Colorado",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 295,
+    "fields": {
+      "brewery": 59,
+      "street": "4392 Madison Parkway",
+      "city": "Burlington",
+      "state": "Florida",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 296,
+    "fields": {
+      "brewery": 60,
+      "street": "5368 Meadow Avenue",
+      "city": "Pleasanton",
+      "state": "Texas",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 297,
+    "fields": {
+      "brewery": 60,
+      "street": "1284 Hill Parkway",
+      "city": "Milton",
+      "state": "Mississippi",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 298,
+    "fields": {
+      "brewery": 60,
+      "street": "8781 Fourth Circle",
+      "city": "Bedford",
+      "state": "Texas",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 299,
+    "fields": {
+      "brewery": 60,
+      "street": "1288 Broadway Way",
+      "city": "Pleasanton",
+      "state": "Maryland",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 300,
+    "fields": {
+      "brewery": 60,
+      "street": "6834 Sunset View Street",
+      "city": "Burlington",
+      "state": "Ohio",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 301,
+    "fields": {
+      "brewery": 61,
+      "street": "7834 Jackson Drive",
+      "city": "Los Angeles",
+      "state": "Maryland",
+      "type": "Taproom",
+      "tours": true,
+      "capacity": "> 100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 302,
+    "fields": {
+      "brewery": 61,
+      "street": "2978 Sunset View Trail",
+      "city": "Salem",
+      "state": "Kansas",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 303,
+    "fields": {
+      "brewery": 61,
+      "street": "2027 Jefferson Boulevard",
+      "city": "Columbus",
+      "state": "Arizona",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 304,
+    "fields": {
+      "brewery": 61,
+      "street": "6506 Third Lane",
+      "city": "Marion",
+      "state": "Oklahoma",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 305,
+    "fields": {
+      "brewery": 61,
+      "street": "7247 Sunset View Boulevard",
+      "city": "Fairview",
+      "state": "Maine",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 306,
+    "fields": {
+      "brewery": 62,
+      "street": "4773 Sunset View Parkway",
+      "city": "Kingston",
+      "state": "Florida",
+      "type": "Brewery Only",
+      "tours": true,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 307,
+    "fields": {
+      "brewery": 62,
+      "street": "2409 Elm Boulevard",
+      "city": "Columbus",
+      "state": "Arizona",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 308,
+    "fields": {
+      "brewery": 62,
+      "street": "7013 Second Way",
+      "city": "New York City",
+      "state": "Alabama",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 309,
+    "fields": {
+      "brewery": 62,
+      "street": "9699 Vine Boulevard",
+      "city": "Auburn",
+      "state": "Texas",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 310,
+    "fields": {
+      "brewery": 62,
+      "street": "3276 Broadway Road",
+      "city": "Bedford",
+      "state": "Rhode Island",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 311,
+    "fields": {
+      "brewery": 63,
+      "street": "3670 Chestnut Circle",
+      "city": "Phoenix",
+      "state": "Oregon",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 312,
+    "fields": {
+      "brewery": 63,
+      "street": "5641 High Parkway",
+      "city": "Milton",
+      "state": "Georgia",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 313,
+    "fields": {
+      "brewery": 63,
+      "street": "5120 Market Street",
+      "city": "Washington",
+      "state": "Kansas",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 314,
+    "fields": {
+      "brewery": 63,
+      "street": "2677 Franklin Avenue",
+      "city": "Jacksonville",
+      "state": "South Carolina",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 315,
+    "fields": {
+      "brewery": 63,
+      "street": "9218 Main Way",
+      "city": "Dallas",
+      "state": "North Dakota",
+      "type": "Other",
+      "tours": true,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 316,
+    "fields": {
+      "brewery": 64,
+      "street": "6460 Forest Way",
+      "city": "Columbus",
+      "state": "Kansas",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 317,
+    "fields": {
+      "brewery": 64,
+      "street": "6703 Meadow Boulevard",
+      "city": "San Antonio",
+      "state": "Nebraska",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 318,
+    "fields": {
+      "brewery": 64,
+      "street": "4410 Ridge Lane",
+      "city": "Jacksonville",
+      "state": "Arkansas",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 319,
+    "fields": {
+      "brewery": 64,
+      "street": "7642 Maple Avenue",
+      "city": "Greenville",
+      "state": "Idaho",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 320,
+    "fields": {
+      "brewery": 64,
+      "street": "2294 College Drive",
+      "city": "Marion",
+      "state": "California",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 321,
+    "fields": {
+      "brewery": 65,
+      "street": "8634 Forest Avenue",
+      "city": "Trenton",
+      "state": "Oregon",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 322,
+    "fields": {
+      "brewery": 65,
+      "street": "5041 Washington Hill",
+      "city": "San Antonio",
+      "state": "Michigan",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 323,
+    "fields": {
+      "brewery": 65,
+      "street": "2959 High Avenue",
+      "city": "Centerville",
+      "state": "Massachusetts",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 324,
+    "fields": {
+      "brewery": 65,
+      "street": "4386 Jefferson Trail",
+      "city": "Plymouth",
+      "state": "Pennsylvania",
+      "type": "Brewpub",
+      "tours": true,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 325,
+    "fields": {
+      "brewery": 65,
+      "street": "3454 Jackson Road",
+      "city": "Liberty",
+      "state": "Rhode Island",
+      "type": "Brewery Only",
+      "tours": true,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 326,
+    "fields": {
+      "brewery": 66,
+      "street": "6152 Lake Way",
+      "city": "Springfield",
+      "state": "North Dakota",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 327,
+    "fields": {
+      "brewery": 66,
+      "street": "8832 Cherry Trail",
+      "city": "Trenton",
+      "state": "Iowa",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 328,
+    "fields": {
+      "brewery": 66,
+      "street": "3380 Jefferson Boulevard",
+      "city": "Fairview",
+      "state": "Rhode Island",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 329,
+    "fields": {
+      "brewery": 66,
+      "street": "7716 Walnut Boulevard",
+      "city": "Bedford",
+      "state": "Wisconsin",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 330,
+    "fields": {
+      "brewery": 66,
+      "street": "9411 Park Drive",
+      "city": "Chicago",
+      "state": "Ohio",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 331,
+    "fields": {
+      "brewery": 67,
+      "street": "6475 High Avenue",
+      "city": "Georgetown",
+      "state": "Georgia",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 332,
+    "fields": {
+      "brewery": 67,
+      "street": "2545 Chestnut Avenue",
+      "city": "Fairview",
+      "state": "Rhode Island",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 333,
+    "fields": {
+      "brewery": 67,
+      "street": "4256 High Avenue",
+      "city": "Bedford",
+      "state": "Connecticut",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 334,
+    "fields": {
+      "brewery": 67,
+      "street": "3719 Vine Lane",
+      "city": "Trenton",
+      "state": "Ohio",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 335,
+    "fields": {
+      "brewery": 67,
+      "street": "8120 High Avenue",
+      "city": "Dallas",
+      "state": "Connecticut",
+      "type": "Other",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 336,
+    "fields": {
+      "brewery": 68,
+      "street": "2802 Lake Trail",
+      "city": "Philadelphia",
+      "state": "New York",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 337,
+    "fields": {
+      "brewery": 68,
+      "street": "7138 Walnut Drive",
+      "city": "Plymouth",
+      "state": "Minnesota",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 338,
+    "fields": {
+      "brewery": 68,
+      "street": "8334 Lake Avenue",
+      "city": "Philadelphia",
+      "state": "Hawaii",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 339,
+    "fields": {
+      "brewery": 68,
+      "street": "6078 Vine Street",
+      "city": "Oxford",
+      "state": "Tennessee",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 340,
+    "fields": {
+      "brewery": 68,
+      "street": "6460 Park Boulevard",
+      "city": "Houston",
+      "state": "Maine",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 341,
+    "fields": {
+      "brewery": 69,
+      "street": "9945 Elm Street",
+      "city": "Washington",
+      "state": "Maryland",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 342,
+    "fields": {
+      "brewery": 69,
+      "street": "5656 Elm Trail",
+      "city": "Los Angeles",
+      "state": "Minnesota",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 343,
+    "fields": {
+      "brewery": 69,
+      "street": "2087 Ridgeview Boulevard",
+      "city": "Columbus",
+      "state": "Montana",
+      "type": "Brewery Only",
+      "tours": true,
+      "capacity": "> 100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 344,
+    "fields": {
+      "brewery": 69,
+      "street": "5016 Sixth Street",
+      "city": "San Diego",
+      "state": "New York",
+      "type": "Beer Garden",
+      "tours": true,
+      "capacity": "25-50",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 345,
+    "fields": {
+      "brewery": 69,
+      "street": "3811 High Avenue",
+      "city": "Kingston",
+      "state": "Mississippi",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 346,
+    "fields": {
+      "brewery": 70,
+      "street": "1690 Lake Circle",
+      "city": "Monroe",
+      "state": "Colorado",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 347,
+    "fields": {
+      "brewery": 70,
+      "street": "7277 Lake Parkway",
+      "city": "Liberty",
+      "state": "Maine",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 348,
+    "fields": {
+      "brewery": 70,
+      "street": "4299 Washington Trail",
+      "city": "Centerville",
+      "state": "Alabama",
+      "type": "Other",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 349,
+    "fields": {
+      "brewery": 70,
+      "street": "1150 College Avenue",
+      "city": "Georgetown",
+      "state": "Minnesota",
+      "type": "Other",
+      "tours": true,
+      "capacity": "50-100",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 350,
+    "fields": {
+      "brewery": 70,
+      "street": "1017 Sixth Boulevard",
+      "city": "Chicago",
+      "state": "Utah",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "< 10",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 351,
+    "fields": {
+      "brewery": 71,
+      "street": "3165 High Hill",
+      "city": "Union",
+      "state": "Michigan",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 352,
+    "fields": {
+      "brewery": 71,
+      "street": "152 Main Boulevard",
+      "city": "Clinton",
+      "state": "Missouri",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 353,
+    "fields": {
+      "brewery": 71,
+      "street": "5097 Fourth Way",
+      "city": "Salem",
+      "state": "Mississippi",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Kegs",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 354,
+    "fields": {
+      "brewery": 71,
+      "street": "4885 Chestnut Way",
+      "city": "Phoenix",
+      "state": "Oklahoma",
+      "type": "Taproom",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 355,
+    "fields": {
+      "brewery": 71,
+      "street": "365 Madison Hill",
+      "city": "San Diego",
+      "state": "New York",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 356,
+    "fields": {
+      "brewery": 72,
+      "street": "196 Chestnut Boulevard",
+      "city": "Los Angeles",
+      "state": "Missouri",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 357,
+    "fields": {
+      "brewery": 72,
+      "street": "6010 Market Drive",
+      "city": "Franklin",
+      "state": "Idaho",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "10-25",
+      "distribution": "Cans",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 358,
+    "fields": {
+      "brewery": 72,
+      "street": "4146 Jackson Parkway",
+      "city": "Kingston",
+      "state": "Ohio",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 359,
+    "fields": {
+      "brewery": 72,
+      "street": "1892 Jefferson Boulevard",
+      "city": "Jacksonville",
+      "state": "Oregon",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Growlers",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 360,
+    "fields": {
+      "brewery": 72,
+      "street": "6738 Walnut Boulevard",
+      "city": "Burlington",
+      "state": "New York",
+      "type": "Beer Garden",
+      "tours": false,
+      "capacity": "> 100",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 361,
+    "fields": {
+      "brewery": 73,
+      "street": "5401 Cherry Avenue",
+      "city": "Windsor",
+      "state": "Kansas",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Bottles",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 362,
+    "fields": {
+      "brewery": 73,
+      "street": "612 Cedar Circle",
+      "city": "San Jose",
+      "state": "New Mexico",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 363,
+    "fields": {
+      "brewery": 73,
+      "street": "6914 Elm Parkway",
+      "city": "Austin",
+      "state": "Louisiana",
+      "type": "Other",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 364,
+    "fields": {
+      "brewery": 73,
+      "street": "2922 Cedar Boulevard",
+      "city": "Georgetown",
+      "state": "Washington",
+      "type": "Brewery Only",
+      "tours": false,
+      "capacity": "50-100",
+      "distribution": "Draft",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  },
+  {
+    "model": "brewery.brewerylocation",
+    "pk": 365,
+    "fields": {
+      "brewery": 73,
+      "street": "5152 Adams Road",
+      "city": "Salem",
+      "state": "Louisiana",
+      "type": "Brewpub",
+      "tours": false,
+      "capacity": "25-50",
+      "distribution": "Other",
+      "created_at": "1970-01-01 12:00:00.0+00:00",
+      "updated_at": "1970-01-01 12:00:00.0+00:00"
+    }
+  }
+]
