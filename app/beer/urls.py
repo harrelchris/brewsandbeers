@@ -5,19 +5,9 @@ from . import views
 app_name = "beer"
 
 urlpatterns = [
-    path("", views.BeerListView.as_view(), name="beer_list"),
-    path("create/", views.BeerCreateView.as_view(), name="beer_create"),
-    path("<str:pk>/", views.BeerDetailView.as_view(), name="beer_detail"),
-    path("update/<str:pk>/", views.BeerUpdateView.as_view(), name="beer_update"),
-    path("delete/<str:pk>/", views.BeerDeleteView.as_view(), name="beer_delete"),
-    path(
-        "<str:pk>/review/create/",
-        views.ReviewCreateView.as_view(),
-        name="review_create",
-    ),
-    path(
-        "<str:pk>/image/create/",
-        views.ImageCreateView.as_view(),
-        name="image_create",
-    ),
+    path("", views.BeerList.as_view(), name="beer_list"),
+    path("<int:pk>/", views.BeerDetail.as_view(), name="beer_detail"),
+    path("<int:pk>/create/", views.BeerCreate.as_view(), name="beer_create"),
+    path("<int:pk>/image/", views.ImageCreate.as_view(), name="image_create"),
+    path("<int:pk>/review/", views.ReviewCreate.as_view(), name="review_create"),
 ]

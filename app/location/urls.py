@@ -5,7 +5,7 @@ from . import views
 app_name = "location"
 
 urlpatterns = [
-    path("<str:pk>/", views.LocationDetail.as_view(), name="location_detail"),
-    path("create/<int:brewery_pk>", views.LocationCreate.as_view(), name="location_create"),
-    path("create/review/<int:location_pk>", views.ReviewCreate.as_view(), name="review_create"),
+    path("<int:pk>/", views.LocationDetail.as_view(), name="location_detail"),
+    path("<int:pk>/create/", views.LocationCreate.as_view(), name="location_create"),
+    path("<int:pk>/review/", views.ReviewCreate.as_view(), name="review_create"),
 ]

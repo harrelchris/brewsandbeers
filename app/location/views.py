@@ -25,11 +25,11 @@ class LocationCreate(LoginRequiredMixin, CreateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["brewery"] = Brewery.objects.get(pk=self.kwargs["brewery_pk"])
+        context["brewery"] = Brewery.objects.get(pk=self.kwargs["pk"])
         return context
 
     def form_valid(self, form):
-        form.instance.brewery = Brewery.objects.get(pk=self.kwargs["brewery_pk"])
+        form.instance.brewery = Brewery.objects.get(pk=self.kwargs["pk"])
         return super().form_valid(form)
 
     def get_success_url(self):
@@ -58,12 +58,12 @@ class ReviewCreate(LoginRequiredMixin, CreateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["location"] = Location.objects.get(pk=self.kwargs["location_pk"])
+        context["location"] = Location.objects.get(pk=self.kwargs["pk"])
         return context
 
     def form_valid(self, form):
         form.instance.user = self.request.user
-        form.instance.location = Location.objects.get(pk=self.kwargs["location_pk"])
+        form.instance.location = Location.objects.get(pk=self.kwargs["pk"])
         return super().form_valid(form)
 
     def get_success_url(self):

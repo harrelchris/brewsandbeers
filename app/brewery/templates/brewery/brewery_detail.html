@@ -18,7 +18,7 @@
 
   <h2>Beers</h2>
   {% if beers %}
-    <p><a href="{% url 'beer:beer_create' %}">Submit a beer</a></p>
+    <p><a href="{% url 'beer:beer_create' brewery.pk %}">Submit a beer</a></p>
     <ul>
     {% for beer in beers %}
       <li><a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a></li>
