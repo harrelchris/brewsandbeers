@@ -36,6 +36,10 @@ class BreweryCreate(LoginRequiredMixin, CreateView):
         "founded",
     ]
 
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super().form_valid(form)
+
     def get_success_url(self):
         return reverse_lazy("brewery:brewery_detail", kwargs={"pk": self.object.pk})
 
