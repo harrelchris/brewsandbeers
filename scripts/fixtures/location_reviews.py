@@ -50,4 +50,5 @@ for location in range(1, 365):
         data.append(record)
         pk += 1
 
-print(json.dumps(data, indent=2))
+with open("../../app/brewery/fixtures/location_reviews.json", "w") as f:
+    json.dump(data, f)

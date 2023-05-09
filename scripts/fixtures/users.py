@@ -221,4 +221,5 @@ for index, username in enumerate(usernames):
     }
     data.append(record)
 
-print(json.dumps(data, indent=2))
+with open("../../app/user/fixtures/users.json", "w") as f:
+    json.dump(data, f)

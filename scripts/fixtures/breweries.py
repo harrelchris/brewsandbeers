@@ -93,4 +93,5 @@ for index, line in enumerate(breweries.strip().splitlines()):
     }
     data.append(record)
 
-print(json.dumps(data, indent=2))
+with open("../../app/brewery/fixtures/breweries.json", "w") as f:
+    json.dump(data, f)

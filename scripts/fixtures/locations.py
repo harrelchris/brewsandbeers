@@ -195,4 +195,5 @@ for i in range(1, 74):
         data.append(record)
         pk += 1
 
-print(json.dumps(data, indent=2))
+with open("../../app/brewery/fixtures/locations.json", "w") as f:
+    json.dump(data, f)
