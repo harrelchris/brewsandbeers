@@ -23,7 +23,7 @@ urlpatterns = [
         name="brewery_location_create",
     ),
     path(
-        "<int:pk>/location/<int:location_pk>/",
+        "<int:brewery_pk>/location/<int:pk>/",
         views.BreweryLocationDetailView.as_view(),
         name="brewery_location_detail",
     ),
