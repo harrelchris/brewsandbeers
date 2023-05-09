@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "beer",
     "brewery",
+    "image",
     "index",
     "location",
     "user",

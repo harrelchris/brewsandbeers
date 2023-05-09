@@ -44,14 +44,6 @@ class Location(BaseModel):
         return f"{self.brewery.name} - {self.city}, {self.state} - {self.pk}"
 
 
-class LocationImage(BaseModel):
-    location = models.ForeignKey(Location, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to="images/location/")
-
-    def __str__(self):
-        return f"{self.location.brewery.name} - {self.location.city} - {self.pk}"
-
-
 class Review(BaseModel):
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
     text = models.TextField(max_length=4096)
