@@ -33,6 +33,11 @@ if exist db.sqlite3 (
 python app/manage.py makemigrations
 python app/manage.py migrate
 
+:: Delete migrations during development
+del app\beer\migrations\0001_initial.py
+del app\brewery\migrations\0001_initial.py
+del app\user\migrations\0001_initial.py
+
 :: Create super user
 if not defined DJANGO_SUPERUSER_USERNAME (
     set DJANGO_SUPERUSER_USERNAME=user
@@ -43,5 +48,12 @@ if not defined DJANGO_SUPERUSER_USERNAME (
 python app\manage.py createsuperuser --noinput
 
 :: Load data
+python app/manage.py loaddata users
 python app/manage.py loaddata breweries
+python app/manage.py loaddata brewery_images
+python app/manage.py loaddata locations
+python app/manage.py loaddata location_images
+python app/manage.py loaddata location_reviews
 python app/manage.py loaddata beers
+python app/manage.py loaddata beer_images
+python app/manage.py loaddata beer_reviews

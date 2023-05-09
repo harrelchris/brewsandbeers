@@ -67,7 +67,7 @@ class BreweryLocation(BaseModel):
 
 class BreweryLocationImage(BaseModel):
     brewery_location = models.ForeignKey(BreweryLocation, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to="images/brewery_location/")
+    image = models.ImageField(upload_to="images/location/")
 
     def __str__(self):
         return f"{self.brewery_location.brewery.name} - {self.brewery_location.city} - {self.pk}"
