@@ -6,7 +6,7 @@ pk = 1
 for i in range(1, 74):
     for _ in range(4):
         record = {
-            "model": "image.image",
+            "model": "brewery.image",
             "pk": pk,
             "fields": {
                 "brewery": i,
@@ -18,5 +18,5 @@ for i in range(1, 74):
         data.append(record)
         pk += 1
 
-with open("../../app/image/fixtures/brewery_images.json", "w") as f:
+with open("../../app/brewery/fixtures/brewery_images.json", "w") as f:
     json.dump(data, f)

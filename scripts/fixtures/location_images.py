@@ -2,11 +2,11 @@ import json
 import random
 
 data = []
-pk = 293
+pk = 1
 for i in range(1, 365):
     for _ in range(5):
         record = {
-            "model": "image.image",
+            "model": "location.locationimage",
             "pk": pk,
             "fields": {
                 "location": i,
@@ -18,5 +18,5 @@ for i in range(1, 365):
         data.append(record)
         pk += 1
 
-with open("../../app/image/fixtures/location_images.json", "w") as f:
+with open("../../app/location/fixtures/location_images.json", "w") as f:
     json.dump(data, f)
