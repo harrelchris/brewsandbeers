@@ -88,8 +88,8 @@ for index, line in enumerate(breweries.strip().splitlines()):
             "name": name,
             "founded": founded,
             "created_at": "1970-01-01 12:00:00.0+00:00",
-            "updated_at": "1970-01-01 12:00:00.0+00:00"
-        }
+            "updated_at": "1970-01-01 12:00:00.0+00:00",
+        },
     }
     data.append(record)
 

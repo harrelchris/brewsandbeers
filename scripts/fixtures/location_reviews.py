@@ -28,7 +28,7 @@ texts = [
     "They donate to good charities.",
     "Trivia night is really fun",
     "One of my top 5 most visited places in this city for sure",
-    "Definitely worth going out of your way to visit this place. Really good beer!"
+    "Definitely worth going out of your way to visit this place. Really good beer!",
 ]
 
 data = []
@@ -45,7 +45,7 @@ for location in range(1, 365):
                 "rating": random.randint(3, 6),
                 "created_at": "1970-01-01 12:00:00.0+00:00",
                 "updated_at": "1970-01-01 12:00:00.0+00:00",
-            }
+            },
         }
         data.append(record)
         pk += 1

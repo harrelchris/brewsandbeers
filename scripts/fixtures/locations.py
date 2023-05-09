@@ -152,7 +152,7 @@ brewery_types = [
     "Taproom",
     "Brewpub",
     "Beer Garden",
-    "Other"
+    "Other",
 ]
 
 capacities = [
@@ -180,17 +180,17 @@ for i in range(1, 74):
             "model": "brewery.brewerylocation",
             "pk": pk,
             "fields": {
-                "brewery":  i,
+                "brewery": i,
                 "street": f"{random.randint(100, 9999)} {random.choice(streets)} {random.choice(street_types)}",
-                "city":  random.choice(cities),
+                "city": random.choice(cities),
                 "state": random.choice(states),
-                "type":  random.choice(brewery_types),
+                "type": random.choice(brewery_types),
                 "tours": random.randrange(100) > 90,
-                "capacity":  random.choice(capacities),
+                "capacity": random.choice(capacities),
                 "distribution": random.choice(distributions),
                 "created_at": "1970-01-01 12:00:00.0+00:00",
-                "updated_at": "1970-01-01 12:00:00.0+00:00"
-            }
+                "updated_at": "1970-01-01 12:00:00.0+00:00",
+            },
         }
         data.append(record)
         pk += 1

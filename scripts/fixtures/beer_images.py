@@ -12,8 +12,8 @@ for i in range(1, 865):
                 "beer": i,
                 "image": f"images/beer/{random.randint(1,13)}.png",
                 "created_at": "1970-01-01 12:00:00.0+00:00",
-                "updated_at": "1970-01-01 12:00:00.0+00:00"
-            }
+                "updated_at": "1970-01-01 12:00:00.0+00:00",
+            },
         }
         data.append(record)
         pk += 1

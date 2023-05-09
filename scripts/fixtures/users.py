@@ -217,7 +217,7 @@ for index, username in enumerate(usernames):
             "is_staff": False,
             "is_active": True,
             "date_joined": "1970-01-01 12:00:00.0+00:00",
-        }
+        },
     }
     data.append(record)
 

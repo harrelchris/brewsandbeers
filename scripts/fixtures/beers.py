@@ -521,8 +521,8 @@ for i in range(1, 73):
                 "abv": max([random.randint(0, 500) / 100, 0]),
                 "ibu": random.randint(5, 100),
                 "created_at": "1970-01-01 12:00:00.0+00:00",
-                "updated_at": "1970-01-01 12:00:00.0+00:00"
-            }
+                "updated_at": "1970-01-01 12:00:00.0+00:00",
+            },
         }
         data.append(record)
         pk += 1
