@@ -10,7 +10,7 @@ for i in range(1, 365):
             "pk": pk,
             "fields": {
                 "brewery_location": i,
-                "image": f"images/location/{random.randint(1,22)}.png",
+                "image": f"images/location/{random.randint(1,21)}.png",
                 "created_at": "1970-01-01 12:00:00.0+00:00",
                 "updated_at": "1970-01-01 12:00:00.0+00:00",
             }

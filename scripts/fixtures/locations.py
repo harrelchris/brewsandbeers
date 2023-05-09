@@ -181,7 +181,7 @@ for i in range(1, 74):
             "pk": pk,
             "fields": {
                 "brewery":  i,
-                "street": f"{random.randint(100, 10000)} {random.choice(streets)} {random.choice(street_types)}",
+                "street": f"{random.randint(100, 9999)} {random.choice(streets)} {random.choice(street_types)}",
                 "city":  random.choice(cities),
                 "state": random.choice(states),
                 "type":  random.choice(brewery_types),
