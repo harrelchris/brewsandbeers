@@ -40,6 +40,7 @@ repos:
       - id: codespell
         exclude: "scripts/fixtures"
         exclude_types: [json]
+        args: ["-L tripel"]
   - repo: https://github.com/pycqa/bandit
     rev: 1.7.4
     hooks:
