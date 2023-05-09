@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Submit a {{ type }} image{% endblock %}
+
+{% block content %}
+  <h1>{{ type|capfirst }} Image</h1>
+  {% if beer %}
+    <p>
+      <a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a> by
+      <a href="{% url 'brewery:brewery_detail' beer.brewery.pk %}">{{ beer.brewery.name }}</a>
+    </p>
+  {% elif brewery %}
+    <p><a href="{% url 'brewery:brewery_detail' brewery.pk %}">{{ brewery.name }}</a></p>
+  {% elif location %}
+    <p><a href="{% url 'brewery:brewery_detail' location.brewery.pk %}">{{ location.brewery.name }}</a> located at
+      <a href="{% url 'location:location_detail' location.pk %}">{{ location.street }} {{ location.city }}, {{ location.state }}</a></p>
+  {% endif %}
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_div }}
+    <input type="submit" value="Upload">
+  </form>
+{% endblock %}
