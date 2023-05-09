@@ -16,11 +16,3 @@ class Brewery(BaseModel):
 
     def __str__(self):
         return self.name
-
-
-class BreweryImage(BaseModel):
-    brewery = models.ForeignKey(Brewery, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to="images/brewery/")
-
-    def __str__(self):
-        return f"{self.brewery.name} - {self.pk}"
