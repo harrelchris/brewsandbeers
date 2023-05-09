@@ -1,62 +1,60 @@
-from django.apps import apps
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views.generic import (
     CreateView,
-    DeleteView,
     DetailView,
     ListView,
-    UpdateView,
 )
 
-from . import models
-
-Brewery = apps.get_model("brewery", "Brewery")
-
-
-class BeerCreateView(LoginRequiredMixin, CreateView):
-    model = models.Beer
-    fields = ["name"]
-    template_name_suffix = "_create"
-    success_url = reverse_lazy("beer:beer_list")
+from .models import Beer, BeerImage, BeerReview
+from brewery.models import Brewery
 
 
-class BeerDeleteView(LoginRequiredMixin, DeleteView):
-    model = models.Beer
-    template_name_suffix = "_delete"
-    success_url = reverse_lazy("beer:beer_list")
-
-
-class BeerDetailView(DetailView):
-    model = models.Beer
+class BeerCreate(LoginRequiredMixin, CreateView):
+    model = Beer
+    template_name = "beer/beer_create.html"
+    fields = [
+        "name",
+        "type",
+        "style",
+        "description",
+        "color",
+        "abv",
+        "ibu",
+    ]
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["brewery"] = Brewery.objects.get(pk=self.get_object().brewery.pk)
-        context["review_list"] = models.BeerReview.objects.filter(
-            beer_id=self.kwargs["pk"],
-        )
-        context["image_list"] = models.BeerImage.objects.filter(
-            beer_id=self.kwargs["pk"],
-        )
+        context["brewery"] = Brewery.objects.get(pk=self.kwargs["pk"])
+        return context
+
+    def form_valid(self, form):
+        form.instance.brewery = Brewery.objects.get(pk=self.kwargs["pk"])
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse_lazy("beer:beer_detail", kwargs={"pk": self.object.pk})
+
+
+class BeerDetail(DetailView):
+    model = Beer
+    template_name = "beer/beer_detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["brewery"] = Brewery.objects.get(pk=self.object.brewery.pk)
+        context["images"] = BeerImage.objects.filter(beer=self.object)
+        context["reviews"] = BeerReview.objects.filter(beer=self.object)
         return context
 
 
-class BeerListView(ListView):
-    model = models.Beer
+class BeerList(ListView):
+    model = Beer
+    template_name = "beer/beer_list.html"
 
 
-class BeerUpdateView(LoginRequiredMixin, UpdateView):
-    model = models.Beer
-    fields = ["name"]
-    template_name_suffix = "_update"
-
-    def get_success_url(self):
-        return reverse_lazy("beer:beer_detail", kwargs={"pk": self.kwargs["pk"]})
-
-
-class ReviewCreateView(LoginRequiredMixin, CreateView):
-    model = models.BeerReview
+class ReviewCreate(LoginRequiredMixin, CreateView):
+    model = BeerReview
     fields = [
         "rating",
         "bitter",
@@ -67,36 +65,38 @@ class ReviewCreateView(LoginRequiredMixin, CreateView):
         "smell",
         "text",
     ]
-    template_name = "beer/beer_review_create.html"
+    template_name = "beer/review_create.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["beer"] = Beer.objects.get(pk=self.kwargs["pk"])
+        return context
 
     def form_valid(self, form):
         form.instance.user = self.request.user
-        form.instance.beer = models.Beer.objects.get(pk=self.kwargs["pk"])
+        form.instance.beer = Beer.objects.get(pk=self.kwargs["pk"])
         return super().form_valid(form)
 
     def get_success_url(self):
         return reverse_lazy("beer:beer_detail", kwargs={"pk": self.kwargs["pk"]})
 
+
+class ImageCreate(LoginRequiredMixin, CreateView):
+    model = BeerImage
+    template_name = "beer/image_create.html"
+    fields = [
+        "image",
+    ]
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["beer"] = models.Beer.objects.get(pk=self.kwargs["pk"])
+        context["beer"] = Beer.objects.get(pk=self.kwargs["pk"])
         return context
-
-
-class ImageCreateView(LoginRequiredMixin, CreateView):
-    model = models.BeerImage
-    fields = ["image"]
-    template_name = "beer/beer_image_create.html"
 
     def form_valid(self, form):
         form.instance.user = self.request.user
-        form.instance.beer = models.Beer.objects.get(pk=self.kwargs["pk"])
+        form.instance.beer = Beer.objects.get(pk=self.kwargs["pk"])
         return super().form_valid(form)
 
     def get_success_url(self):
         return reverse_lazy("beer:beer_detail", kwargs={"pk": self.kwargs["pk"]})
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["beer"] = models.Beer.objects.get(pk=self.kwargs["pk"])
-        return context
