@@ -36,10 +36,10 @@ pk = 1
 for location in range(1, 365):
     for _ in range(5):
         record = {
-            "model": "brewery.brewerylocationreview",
+            "model": "location.review",
             "pk": pk,
             "fields": {
-                "brewery_location": location,
+                "location": location,
                 "user": random.randint(1, 200),
                 "text": random.choice(texts),
                 "rating": random.randint(3, 6),
@@ -50,5 +50,5 @@ for location in range(1, 365):
         data.append(record)
         pk += 1
 
-with open("../../app/brewery/fixtures/location_reviews.json", "w") as f:
+with open("../../app/location/fixtures/location_reviews.json", "w") as f:
     json.dump(data, f)

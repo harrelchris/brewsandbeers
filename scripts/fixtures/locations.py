@@ -146,7 +146,6 @@ West Virginia
 Wisconsin
 Wyoming""".splitlines()
 
-
 brewery_types = [
     "Brewery Only",
     "Taproom",
@@ -177,7 +176,7 @@ pk = 1
 for i in range(1, 74):
     for _ in range(5):
         record = {
-            "model": "brewery.brewerylocation",
+            "model": "location.location",
             "pk": pk,
             "fields": {
                 "brewery": i,
@@ -195,5 +194,5 @@ for i in range(1, 74):
         data.append(record)
         pk += 1
 
-with open("../../app/brewery/fixtures/locations.json", "w") as f:
+with open("../../app/location/fixtures/locations.json", "w") as f:
     json.dump(data, f)

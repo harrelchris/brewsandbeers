@@ -36,6 +36,7 @@ python app/manage.py migrate
 :: Delete migrations during development
 del app\beer\migrations\0001_initial.py
 del app\brewery\migrations\0001_initial.py
+del app\location\migrations\0001_initial.py
 del app\user\migrations\0001_initial.py
 
 :: Create super user
