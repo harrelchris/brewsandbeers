@@ -13,7 +13,7 @@ repos:
       - id: detect-private-key
       - id: debug-statements
       - id: end-of-file-fixer
-        exclude_types: ["html"]
+        exclude_types: ["html", "json"]
       - id: mixed-line-ending
       - id: requirements-txt-fixer
       - id: trailing-whitespace
@@ -38,11 +38,13 @@ repos:
     rev: v2.2.1
     hooks:
       - id: codespell
+        exclude: "scripts/fixtures"
+        exclude_types: [json]
   - repo: https://github.com/pycqa/bandit
     rev: 1.7.4
     hooks:
       - id: bandit
-        exclude: "tests"
+        files: ^app/
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: "v0.971"
     hooks:
