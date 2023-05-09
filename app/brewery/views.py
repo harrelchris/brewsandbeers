@@ -6,9 +6,8 @@ from django.views.generic import (
     ListView,
 )
 
-from .models import Brewery
+from .models import Brewery, Image
 from beer.models import Beer
-from image.models import Image
 from location.models import Location
 
 
@@ -39,3 +38,24 @@ class BreweryCreate(LoginRequiredMixin, CreateView):
 
     def get_success_url(self):
         return reverse_lazy("brewery:brewery_detail", kwargs={"pk": self.object.pk})
+
+
+class ImageCreate(LoginRequiredMixin, CreateView):
+    model = Image
+    template_name = "brewery/image_create.html"
+    fields = [
+        "image",
+    ]
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["brewery"] = Brewery.objects.get(pk=self.kwargs["pk"])
+        return context
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        form.instance.brewery = Brewery.objects.get(pk=self.kwargs["pk"])
+        return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse_lazy("brewery:brewery_detail", kwargs={"pk": self.object.brewery.pk})

@@ -19,3 +19,11 @@ class Brewery(BaseModel):
 
     class Meta:
         verbose_name_plural = "breweries"
+
+
+class Image(BaseModel):
+    brewery = models.ForeignKey(Brewery, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to="images/brewery/")
+
+    def __str__(self):
+        return f"{self.brewery.name}"
