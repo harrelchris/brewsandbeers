@@ -29,6 +29,7 @@ class BeerCreate(LoginRequiredMixin, CreateView):
         return context
 
     def form_valid(self, form):
+        form.instance.user = self.request.user
         form.instance.brewery = Brewery.objects.get(pk=self.kwargs["pk"])
         return super().form_valid(form)
 

@@ -27,7 +27,7 @@
     <p><a href="{% url 'beer:review_create' beer.pk %}">Submit a review</a></p>
     <ul>
       {% for review in reviews %}
-        <li>Rated {{ review.rating }} by {{ review.user.username }} on {{ review.created_at.date }}: {{ review.text }}</li>
+        <li>Rated {{ review.rating }} by <a href="{% url 'user:user_detail' review.user.pk %}">{{ review.user.username }}</a> on {{ review.created_at.date }}: {{ review.text }}</li>
       {% endfor %}
     </ul>
   {% else %}
