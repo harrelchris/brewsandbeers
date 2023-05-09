@@ -33,6 +33,11 @@ if exist db.sqlite3 (
 python app/manage.py makemigrations
 python app/manage.py migrate
 
+:: Delete migrations during development
+del app\beer\migrations\0001_initial.py
+del app\brewery\migrations\0001_initial.py
+del app\user\migrations\0001_initial.py
+
 :: Create super user
 if not defined DJANGO_SUPERUSER_USERNAME (
     set DJANGO_SUPERUSER_USERNAME=user
