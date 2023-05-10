@@ -28,4 +28,15 @@
   {% else %}
     <p>No reviews yet. Submit one <a href="{% url 'location:review_create' location.pk %}">here.</a></p>
   {% endif %}
+
+  <h2>Nearby Locations</h2>
+  {% if nearby_locations %}
+    <ul>
+    {% for location in nearby_locations %}
+      <li><a href="{% url 'location:location_detail' location.pk %}">{{ location.street }} {{ location.city }}, {{ location.state }}</a></li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>No nearby locations found. Add one <a href="{% url 'location:location_create' brewery.pk %}">here.</a></p>
+  {% endif %}
 {% endblock %}

@@ -42,6 +42,13 @@ class LocationDetail(DetailView):
         context["brewery"] = Brewery.objects.get(pk=self.object.brewery.pk)
         context["images"] = LocationImage.objects.filter(location=self.get_object())
         context["reviews"] = LocationReview.objects.filter(location=self.get_object())
+        context["nearby_locations"] = Location.objects.filter(
+            # TODO: get all in same city and state, then all in same state
+            #   consider using zip codes and sorting by distance.
+            #   The best option is to geolocate address, but that is costly
+            # city=self.object.city,
+            state=self.object.state,
+        ).exclude(pk=self.object.pk)
         return context
 
 
