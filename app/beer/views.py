@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import JsonResponse
 from django.urls import reverse_lazy
 from django.views.generic import (
     CreateView,
@@ -6,7 +7,7 @@ from django.views.generic import (
     ListView,
 )
 
-from .models import Beer, BeerImage, BeerReview
+from .models import Beer, BeerImage, BeerReview, Favorite
 from brewery.models import Brewery
 
 
@@ -46,6 +47,13 @@ class BeerDetail(DetailView):
         context["brewery"] = Brewery.objects.get(pk=self.object.brewery.pk)
         context["images"] = BeerImage.objects.filter(beer=self.object)
         context["reviews"] = BeerReview.objects.filter(beer=self.object)
+        if self.request.user.is_authenticated:
+            context["favorite"] = Favorite.objects.filter(
+                beer=self.object,
+                user=self.request.user,
+            ).exists()
+        else:
+            context["favorite"] = False
         return context
 
 
@@ -101,3 +109,17 @@ class ImageCreate(LoginRequiredMixin, CreateView):
 
     def get_success_url(self):
         return reverse_lazy("beer:beer_detail", kwargs={"pk": self.kwargs["pk"]})
+
+
+def favorite(request, pk):
+    if request.method == "POST" and request.user.is_authenticated:
+        is_favorite = Favorite.objects.filter(user=request.user, beer_id=pk).exists()
+        if is_favorite:
+            Favorite.objects.filter(user=request.user, beer_id=pk).delete()
+            return JsonResponse(data={"result": "removed"})
+        else:
+            beer = Beer.objects.get(pk=pk)
+            fav = Favorite(beer=beer, user=request.user)
+            fav.save()
+            return JsonResponse(data={"result": "added"})
+    return JsonResponse({"result": "no-op"})

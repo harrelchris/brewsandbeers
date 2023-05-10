@@ -5,7 +5,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DetailView, TemplateView
 
-from beer.models import BeerReview
+from beer.models import BeerReview, Favorite
 from location.models import Review as LocationReview
 
 
@@ -61,6 +61,7 @@ class ProfileView(LoginRequiredMixin, TemplateView):
         context["location_reviews"] = LocationReview.objects.filter(
             user=self.request.user,
         )
+        context["favorites"] = Favorite.objects.filter(user=self.request.user)
         return context
 
 
@@ -74,4 +75,5 @@ class UserDetail(DetailView):
         context["location_reviews"] = LocationReview.objects.filter(
             user_id=self.kwargs["pk"],
         )
+        context["favorites"] = Favorite.objects.filter(user_id=self.kwargs["pk"])
         return context

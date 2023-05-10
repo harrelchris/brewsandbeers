@@ -57,3 +57,4 @@ python app/manage.py loaddata location_reviews
 python app/manage.py loaddata beers
 python app/manage.py loaddata beer_images
 python app/manage.py loaddata beer_reviews
+python app/manage.py loaddata favorites
