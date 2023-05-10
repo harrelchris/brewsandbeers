@@ -1,13 +1,30 @@
 <header>
-  <nav>
-    <a href="{% url 'index:index' %}">Brews and Beers</a>
-    <a href="{% url 'brewery:brewery_list' %}">Breweries</a>
-    <a href="{% url 'beer:beer_list' %}">Beers</a>
-    {% if user.is_authenticated %}
-      <a href="{% url 'user:logout' %}">Logout</a>
-      <a href="{% url 'user:profile' %}">{{ user.username }}</a>
-    {% else %}
-      <a href="{% url 'user:login' %}">Login</a>
-    {% endif %}
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="navbar navbar-expand-lg bg-body-tertiary">
+        <img src="../../media/images/reward.png" alt="Bootstrap" width="70" height="70">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'index:index' %}">Brews and Beers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'brewery:brewery_list' %}">Breweries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="{% url 'beer:beer_list' %}">Beers</a>
+          </li>
+          <li class="nav-item">
+            {% if user.is_authenticated %}
+            <a class="nav-link active" href="{% url 'user:logout' %}">Logout</a>
+            <a class="nav-link active" href="{% url 'user:profile' %}">{{ user.username }}</a>
+            {% else %}
+            <a class="nav-link active" href="{% url 'user:login' %}">Login</a>
+            {% endif %}
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
+
 </header>
