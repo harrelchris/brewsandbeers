@@ -7,6 +7,17 @@
   <p>Hello, {{ user.username }}</p>
   <p><a href="{% url 'user:password_change' %}">Change Password</a></p>
 
+  <h2>Favorites</h2>
+  {% if favorites %}
+    <ul>
+    {% for favorite in favorites %}
+      <li><a href="{% url 'beer:beer_detail' favorite.beer.pk %}">{{ favorite.beer.name }}</a></li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>You haven't saved any favorites yet.</p>
+  {% endif %}
+
   <h2>Beer Reviews</h2>
   {% if beer_reviews %}
   <ul>

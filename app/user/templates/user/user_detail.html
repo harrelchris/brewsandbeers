@@ -5,6 +5,17 @@
 {% block content %}
   <h1>{{ user.username }}</h1>
 
+  <h2>Favorites</h2>
+  {% if favorites %}
+    <ul>
+    {% for favorite in favorites %}
+      <li><a href="{% url 'beer:beer_detail' favorite.beer.pk %}">{{ favorite.beer.name }}</a></li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>{{ user.username }} hasn't saved any favorites yet.</p>
+  {% endif %}
+
   <h2>Beer Reviews</h2>
   {% if beer_reviews %}
   <ul>
@@ -12,6 +23,8 @@
       <li><a href="{% url 'beer:beer_detail' review.beer.pk %}">{{ review.beer.name }}</a></li>
     {% endfor %}
   </ul>
+  {% else %}
+    <p>{{ user.username }} hasn't reviewed any beers yet.</p>
   {% endif %}
 
   <h2>Location Reviews</h2>
@@ -21,5 +34,7 @@
       <li><a href="{% url 'location:location_detail' review.location.pk %}">{{ review.location.brewery.name }} in {{ review.location.city }}</a></li>
     {% endfor %}
   </ul>
+  {% else %}
+    <p>{{ user.username }} hasn't reviewed any locations yet.</p>
   {% endif %}
 {% endblock %}
