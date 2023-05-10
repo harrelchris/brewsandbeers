@@ -52,7 +52,7 @@ class LocationImage(BaseModel):
         return f"{self.location.brewery.name} - {self.location.city}"
 
 
-class Review(BaseModel):
+class LocationReview(BaseModel):
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
     text = models.TextField(max_length=4096)
     rating = models.IntegerField(

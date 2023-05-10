@@ -1,11 +1,8 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
-from django.views.generic import (
-    CreateView,
-    DetailView,
-)
+from django.views.generic import CreateView, DetailView
 
-from .models import Location, LocationImage, Review
+from .models import Location, LocationImage, LocationReview
 from brewery.models import Brewery
 
 
@@ -44,7 +41,14 @@ class LocationDetail(DetailView):
         context = super().get_context_data(**kwargs)
         context["brewery"] = Brewery.objects.get(pk=self.object.brewery.pk)
         context["images"] = LocationImage.objects.filter(location=self.get_object())
-        context["reviews"] = Review.objects.filter(location=self.get_object())
+        context["reviews"] = LocationReview.objects.filter(location=self.get_object())
+        context["nearby_locations"] = Location.objects.filter(
+            # TODO: get all in same city and state, then all in same state
+            #   consider using zip codes and sorting by distance.
+            #   The best option is to geolocate address, but that is costly
+            # city=self.object.city,
+            state=self.object.state,
+        ).exclude(pk=self.object.pk)
         return context
 
 
@@ -73,7 +77,7 @@ class ImageCreate(LoginRequiredMixin, CreateView):
 
 
 class ReviewCreate(LoginRequiredMixin, CreateView):
-    model = Review
+    model = LocationReview
     template_name = "location/review_create.html"
     fields = [
         "text",

@@ -4,4 +4,4 @@ from . import models
 
 admin.site.register(models.Location)
 admin.site.register(models.LocationImage)
-admin.site.register(models.Review)
+admin.site.register(models.LocationReview)

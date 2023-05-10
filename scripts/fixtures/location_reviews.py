@@ -36,7 +36,7 @@ pk = 1
 for location in range(1, 365):
     for _ in range(5):
         record = {
-            "model": "location.review",
+            "model": "location.locationreview",
             "pk": pk,
             "fields": {
                 "location": location,

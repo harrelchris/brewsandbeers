@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 from django.views.generic import CreateView, DetailView, TemplateView
 
 from beer.models import BeerReview, Favorite
-from location.models import Review as LocationReview
+from location.models import LocationReview
 
 
 class RegisterView(CreateView):
