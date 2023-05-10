@@ -5,7 +5,7 @@ from django.views.generic import (
     DetailView,
 )
 
-from .models import Location, LocationImage, Review
+from .models import Location, LocationImage, LocationReview
 from brewery.models import Brewery
 
 
@@ -44,7 +44,7 @@ class LocationDetail(DetailView):
         context = super().get_context_data(**kwargs)
         context["brewery"] = Brewery.objects.get(pk=self.object.brewery.pk)
         context["images"] = LocationImage.objects.filter(location=self.get_object())
-        context["reviews"] = Review.objects.filter(location=self.get_object())
+        context["reviews"] = LocationReview.objects.filter(location=self.get_object())
         return context
 
 
@@ -73,7 +73,7 @@ class ImageCreate(LoginRequiredMixin, CreateView):
 
 
 class ReviewCreate(LoginRequiredMixin, CreateView):
-    model = Review
+    model = LocationReview
     template_name = "location/review_create.html"
     fields = [
         "text",
