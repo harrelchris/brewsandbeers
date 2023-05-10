@@ -40,4 +40,15 @@
   {% else %}
     <p>No reviews yet. Submit one <a href="{% url 'beer:review_create' beer.pk %}">here.</a></p>
   {% endif %}
+
+  <h2>Similar</h2>
+  {% if similar %}
+    <ul>
+    {% for beer in similar %}
+      <li><a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a> by <a href="{% url 'brewery:brewery_detail' beer.brewery.pk %}">{{ beer.brewery.name }}</a></li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>No similar beers found.</p>
+  {% endif %}
 {% endblock %}
