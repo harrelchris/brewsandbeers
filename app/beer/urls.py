@@ -10,4 +10,5 @@ urlpatterns = [
     path("<int:pk>/create/", views.BeerCreate.as_view(), name="beer_create"),
     path("<int:pk>/image/", views.ImageCreate.as_view(), name="image_create"),
     path("<int:pk>/review/", views.ReviewCreate.as_view(), name="review_create"),
+    path("<int:pk>/favorite/", views.favorite, name="favorite")
 ]
