@@ -48,7 +48,10 @@ class BeerDetail(DetailView):
         context["images"] = BeerImage.objects.filter(beer=self.object)
         context["reviews"] = BeerReview.objects.filter(beer=self.object)
         if self.request.user.is_authenticated:
-            context["favorite"] = Favorite.objects.filter(beer=self.object, user=self.request.user).exists()
+            context["favorite"] = Favorite.objects.filter(
+                beer=self.object,
+                user=self.request.user,
+            ).exists()
         else:
             context["favorite"] = False
         return context
