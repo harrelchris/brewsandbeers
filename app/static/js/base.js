@@ -17,7 +17,6 @@ function getCookie(cname) {
   return "";
 }
 
-
 function toggleFavoriteButton() {
     if (button.innerText === "Add Favorite") {
         button.innerText = "Remove Favorite";
