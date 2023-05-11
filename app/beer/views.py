@@ -47,7 +47,6 @@ class BeerDetail(DetailView):
         context["brewery"] = Brewery.objects.get(pk=self.object.brewery.pk)
         context["images"] = BeerImage.objects.filter(beer=self.object)
         context["reviews"] = BeerReview.objects.filter(beer=self.object)
-        # TODO: use manager to get beers of same type/style with similar ABV and IBU sorted by average rating
         context["similar"] = Beer.objects.filter(type=self.object.type, style=self.object.style)
         if self.request.user.is_authenticated:
             context["favorite"] = Favorite.objects.filter(
