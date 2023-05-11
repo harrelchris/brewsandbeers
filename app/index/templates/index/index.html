@@ -3,5 +3,46 @@
 {% block title %}Brews and Beers{% endblock %}
 
 {% block content %}
-  <h1>Index</h1>
+  <h1>Brews and Beers</h1>
+  <p>Discover and share great beers, breweries, and locations</p>
+
+  <h2>Recent Images</h2>
+  {% for image in images %}
+    <img src="{{ image.image.url }}">
+  {% endfor %}
+
+  <h2>Recent Beers</h2>
+  <ul>
+  {% for beer in beers %}
+    <li><a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a></li>
+  {% endfor %}
+  </ul>
+
+  <h2>Recent Beer Reviews</h2>
+  <ul>
+  {% for review in beer_reviews %}
+    <li>{{ review.text }} - {{ review.user.username }}</li>
+  {% endfor %}
+  </ul>
+
+  <h2>Recent Breweries</h2>
+  <ul>
+  {% for brewery in breweries %}
+    <li><a href="{% url 'brewery:brewery_detail' brewery.pk %}">{{ brewery.name }}</a></li>
+  {% endfor %}
+  </ul>
+
+  <h2>Recent Locations</h2>
+  <ul>
+  {% for location in locations %}
+    <li><a href="{% url 'location:location_detail' location.pk %}">{{ location.brewery.name }} in {{ location.city }}, {{ location.state }}</a></li>
+  {% endfor %}
+  </ul>
+
+  <h2>Recent Location Reviews</h2>
+  <ul>
+  {% for review in location_reviews %}
+    <li>{{ review.text }} - {{ review.user.username }}</li>
+  {% endfor %}
+  </ul>
 {% endblock %}
