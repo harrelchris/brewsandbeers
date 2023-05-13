@@ -264,8 +264,8 @@ Seltzer Black Cherry (Malt)
 Seltzer Mango (Malt)
 Seltzer Mix Pack (Malt)
 Strawberry Lemonade
- Shot
- Zero
+Shot
+Zero
 Mimosa (Malt)
 Original (Malt)
 Tuesday Saison
@@ -515,7 +515,7 @@ for i in range(1, 73):
             "pk": pk,
             "fields": {
                 "brewery": i,
-                "name": random.choice(names),
+                "name": random.choice(names).strip(),
                 "type": random.choice(types),
                 "style": random.choice(styles),
                 "abv": max([random.randint(0, 500) / 100, 0]),
