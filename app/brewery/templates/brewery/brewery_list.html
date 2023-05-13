@@ -3,19 +3,32 @@
 {% block title %}Breweries{% endblock %}
 
 {% block content %}
+  <div class="text-secondary text-center mb-5">
+    <div>
+      <h1 class="display-5 fw-bold text-dark">Breweries</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5">Can't find what you're looking for?</p>
+        <a class="btn btn-warning" href="{% url 'brewery:brewery_create' %}">Add it here</a>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
-    <h1>Breweries</h1>
-    {% if user.is_authenticated %}
-      <p><a href="{% url 'brewery:brewery_create' %}">Create</a></p>
-    {% endif %}
-    {% if brewery_list %}
-      <ul>
-      {% for brewery in brewery_list %}
-        <li><a href="{% url 'brewery:brewery_detail' brewery.pk %}">{{ brewery.name }}</a></li>
-      {% endfor %}
-      </ul>
-    {% else %}
-      <p>No breweries found.</p>
-    {% endif %}
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+    {% for brewery in brewery_list %}
+      <div class="col">
+        <div class="card">
+          <img src="https://placehold.co/600x600" alt="{{ brewery.name }}">
+          <div class="card-body">
+            <h5 class="card-title"><a href="{% url 'brewery:brewery_detail' brewery.pk %}" class="text-secondary text-decoration-none">{{ brewery.name }}</a></h5>
+            <p class="card-text text-body-secondary">Founded {{ brewery.founded }} in City, State</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">10 beers with an average rating of 4.5</small>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
   </div>
 {% endblock %}
