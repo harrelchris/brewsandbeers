@@ -6,7 +6,18 @@
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <img src="{{ images.0.image.url }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{{ images.0.image.url }}" class="d-block w-100 rounded" alt="Brews and Beers">
+            </div>
+          {% for image in images %}
+            <div class="carousel-item">
+              <img src="{{ image.image.url }}" class="d-block w-100 rounded" alt="Brews and Beers">
+            </div>
+          {% endfor %}
+          </div>
+        </div>
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Find a new favorite beer</h1>
@@ -35,7 +46,7 @@
       <div class="col d-flex align-items-start">
         <div>
           <h3 class="fs-2">Breweries</h3>
-          <p>Craft breweries make the world go round. See how artisans are turning simple ingredients into award-winning beverages.</p>
+          <p>Craft breweries make the world go round. Discover artisans turning simple ingredients into award-winning beverages.</p>
           <a href="{% url 'brewery:brewery_list' %}" class="btn btn-warning">
             Discover Breweries
           </a>
@@ -46,7 +57,7 @@
           <h3 class="fs-2">Locations</h3>
           <p>Enjoy live music? Looking for trivia night? Find a new hidden gem with great atmosphere where you can raise a glass with your friends.</p>
           <a href="#" class="btn btn-warning">
-            Raise a Glass
+            Find Locations
           </a>
         </div>
       </div>
