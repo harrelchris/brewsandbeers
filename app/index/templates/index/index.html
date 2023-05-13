@@ -3,46 +3,101 @@
 {% block title %}Brews and Beers{% endblock %}
 
 {% block content %}
-  <h1>Brews and Beers</h1>
-  <p>Discover and share great beers, breweries, and locations</p>
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="{{ images.0.image.url }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Find a new favorite beer</h1>
+        <p class="lead">Are you tired of drinking the same old beer? Discover new and exciting beers from the top craft breweries and share your local favorites with others.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="{% url 'beer:beer_list' %}" class="btn btn-outline-warning btn-lg px-4">Search Beers</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <h2>Recent Images</h2>
-  {% for image in images %}
-    <img src="{{ image.image.url }}">
-  {% endfor %}
 
-  <h2>Recent Beers</h2>
-  <ul>
-  {% for beer in beers %}
-    <li><a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a></li>
-  {% endfor %}
-  </ul>
 
-  <h2>Recent Beer Reviews</h2>
-  <ul>
-  {% for review in beer_reviews %}
-    <li>{{ review.text }} - {{ review.user.username }}</li>
-  {% endfor %}
-  </ul>
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Perfect Match</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div>
+          <h3 class="fs-2">Beers</h3>
+          <p>From crisp and refreshing to rich and complex, explore the full spectrum of beer flavors and find exactly what you're looking for.</p>
+          <a href="{% url 'beer:beer_list' %}" class="btn btn-warning">
+            Explore Beers
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div>
+          <h3 class="fs-2">Breweries</h3>
+          <p>Craft breweries make the world go round. See how artisans are turning simple ingredients into award-winning beverages.</p>
+          <a href="{% url 'brewery:brewery_list' %}" class="btn btn-warning">
+            Discover Breweries
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div>
+          <h3 class="fs-2">Locations</h3>
+          <p>Enjoy live music? Looking for trivia night? Find a new hidden gem with great atmosphere where you can raise a glass with your friends.</p>
+          <a href="#" class="btn btn-warning">
+            Raise a Glass
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <h2>Recent Breweries</h2>
-  <ul>
-  {% for brewery in breweries %}
-    <li><a href="{% url 'brewery:brewery_detail' brewery.pk %}">{{ brewery.name }}</a></li>
-  {% endfor %}
-  </ul>
 
-  <h2>Recent Locations</h2>
-  <ul>
-  {% for location in locations %}
-    <li><a href="{% url 'location:location_detail' location.pk %}">{{ location.brewery.name }} in {{ location.city }}, {{ location.state }}</a></li>
-  {% endfor %}
-  </ul>
 
-  <h2>Recent Location Reviews</h2>
-  <ul>
-  {% for review in location_reviews %}
-    <li>{{ review.text }} - {{ review.user.username }}</li>
-  {% endfor %}
-  </ul>
+  <div class="bg-secondary text-light px-4 py-5 text-center">
+    <div class="py-5">
+      <h1 class="display-5 fw-bold text-white">Personalized Recommendations</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">We'll guide you to beers matching your preferences. Review and favorite beers you enjoy and let our recommendation system do the rest. We evaluate your preferred beers using multiple metrics and use that data to find the perfect brew for you. Create an account now to get started.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="{% url 'user:register' %}" class="btn btn-outline-light btn-lg px-4">Create Free Account</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container my-5">
+    <div class="p-5 text-center rounded-3">
+      <h1 class="text-body-emphasis mt-5">Join the Conversation</h1>
+      <p class="lead">
+        Your ratings and reviews give others insight into the complex flavor profiles of beers before they take a sip. Share your masterful tasting and smelling abilities with the rest of the beer enthusiast community.
+      </p>
+    </div>
+  </div>
+
+
+
+  <div class="album py-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+      {% for review in beer_reviews|slice:"0:6" %}
+        <div class="card m-3" style="width: 25rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{ review.beer.name }}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">{{ review.beer.brewery.name }}</h6>
+            <blockquote class="blockquote mb-0">
+              <p class="card-text">{{ review.text }}</p>
+              <footer class="blockquote-footer"><a href="{% url 'user:user_detail' review.user.pk %}">{{ review.user.username }}</a></footer>
+            </blockquote>
+          </div>
+        </div>
+      {% endfor %}
+
+      </div>
+    </div>
+  </div>
 {% endblock %}
