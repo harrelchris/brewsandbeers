@@ -1,16 +1,19 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 
 {% block title %}Review{% endblock %}
 
 {% block content %}
-  <h1>Review</h1>
-  <p>
-    Review <a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a> by
-    <a href="{% url 'brewery:brewery_detail' beer.brewery.pk %}">{{ beer.brewery.name }}</a>
-  </p>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_div }}
-    <input type="submit" value="Review">
-  </form>
+  <div class="container">
+    <h1>Review</h1>
+    <p>
+      Review <a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a> by
+      <a href="{% url 'brewery:brewery_detail' beer.brewery.pk %}">{{ beer.brewery.name }}</a>
+    </p>
+    <form method="post">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <input type="submit" value="Review">
+    </form>
+  </div>
 {% endblock %}
