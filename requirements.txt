@@ -1,5 +1,7 @@
 # Project dependencies
 
+Crispy-Bootstrap5
 Django
+Django-Crispy-Forms
 Django-Environ
 Pillow
