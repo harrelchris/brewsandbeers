@@ -1,16 +1,113 @@
 {% extends "base.html" %}
 
-{% block title %}Beers{% endblock %}
+{% block extra_css %}
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+{% endblock %}
+
+{% block title %}Search Beers{% endblock %}
 
 {% block content %}
-  <h1>Beers</h1>
-  {% if beer_list %}
-    <ul>
-    {% for beer in beer_list %}
-      <li><a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a></li>
-    {% endfor %}
-    </ul>
-  {% else %}
-    <p>No beers found.</p>
-  {% endif %}
+  <div class="text-secondary text-center">
+    <div>
+      <h1 class="display-5 fw-bold text-dark">Search Beers</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">Search, sort, and filter to find the perfect beer</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <table id="table" class="display">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Brewery</th>
+          <th>Type</th>
+          <th>Style</th>
+          <th>ABV</th>
+          <th>IBU</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for beer in beer_list %}
+        <tr>
+          <td><a class="text-decoration-none text-dark" href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a></td>
+          <td><a class="text-decoration-none text-dark" href="{% url 'brewery:brewery_detail' beer.brewery.pk %}">{{ beer.brewery.name }}</a></td>
+          <td>{{ beer.type }}</td>
+          <td>{{ beer.style }}</td>
+          <td>{{ beer.abv }}</td>
+          <td>{{ beer.ibu }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock %}
+
+{% block extra_js %}
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.2.3/js/dataTables.fixedHeader.min.js"></script>
+  <script type="text/javascript" >
+    // https://datatables.net/extensions/fixedheader/examples/options/columnFiltering.html
+    $(document).ready(function() {
+        $('#table thead tr')
+          .clone(true)
+          .addClass('filters')
+          .appendTo('#table thead');
+        $('#table').DataTable({
+            dom: '<"top"Bfl>rt<"bottom"ip><"clear">',
+            paging: true,
+            header: false,
+            orderCellsTop: false,
+            fixedHeader: false,
+            initComplete: function() {
+                const api = this.api();
+                api
+                    .columns()
+                    .eq(0)
+                    .each(function (colIdx) {
+                        // Set the header cell to contain the input element
+                        let cell = $('.filters th').eq(
+                            $(api.column(colIdx).header()).index()
+                        );
+                        let title = $(cell).text();
+                        $(cell).html('<input type="text" placeholder="' + title + '" />');
+
+                        // On every keypress in this input
+                        $(
+                            'input',
+                            $('.filters th').eq($(api.column(colIdx).header()).index())
+                        )
+                            .off('keyup change')
+                            .on('change', function (e) {
+                                // Get the search value
+                                $(this).attr('title', $(this).val());
+                                let regexr = '({search})'; //$(this).parents('th').find('select').val();
+
+                                let cursorPosition = this.selectionStart;
+                                // Search the column for that value
+                                api
+                                    .column(colIdx)
+                                    .search(
+                                        this.value !== ''
+                                            ? regexr.replace('{search}', '(((' + this.value + ')))')
+                                            : '',
+                                        this.value !== '',
+                                        this.value === ''
+                                    )
+                                    .draw();
+                            })
+                            .on('keyup', function (e) {
+                                e.stopPropagation();
+
+                                $(this).trigger('change');
+                                $(this)
+                                    .focus()[0]
+                                    .setSelectionRange(cursorPosition, cursorPosition);
+                            });
+                    });
+            },
+        });
+    });
+  </script>
 {% endblock %}
