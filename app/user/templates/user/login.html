@@ -4,10 +4,11 @@
 
 {% block content %}
 
-<form class="row gy-2 gx-3 align-items-center w-25 p-3">
+<form class="row gy-2 gx-3 align-items-center w-25 p-3"  method="post">
   <h1>Login</h1>
-  <!-- {{ form.as_div }} -->
+  
   {% csrf_token %}
+  
 
   <div class="form-floating">
     <input type="text" class="form-control" name="username" placeholder="Username">
@@ -17,10 +18,10 @@
     <input type="password" class="form-control" name="password" placeholder="Password" >
     <label for="floatingPassword">Password</label>
     <br>
-    <input type="submit" class="btn btn-primary mb-3" value="Login">
+    
   </div>
   
-    
+  <input type="submit" class="btn btn-primary mb-3" value="Login">
     <p><a href="{% url 'user:register' %}">Register</a></p>
     <p><a href="{% url 'user:password_reset' %}">Reset Password</a></p>
  
