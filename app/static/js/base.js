@@ -18,10 +18,10 @@ function getCookie(cname) {
 }
 
 function toggleFavoriteButton() {
-    if (button.innerText === "Add Favorite") {
-        button.innerText = "Remove Favorite";
-    } else {
-        button.innerText = "Add Favorite";
+    if (button.innerHTML === `<i class="bi bi-star"></i> Add Favorite`) {
+        button.innerHTML = `<i class="bi bi-star-fill"></i> Remove Favorite`;
+    } else if (button.innerHTML === `<i class="bi bi-star-fill"></i> Remove Favorite`) {
+        button.innerHTML = `<i class="bi bi-star"></i> Add Favorite`;
     }
 }
 
