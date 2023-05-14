@@ -3,40 +3,42 @@
 {% block title %}{{ brewery.name }}{% endblock %}
 
 {% block content %}
-  <h1>{{ brewery.name }}</h1>
-  <p>Founded in {{ brewery.founded }}</p>
+  <div class="container">
+    <h1>{{ brewery.name }}</h1>
+    <p>Founded in {{ brewery.founded }}</p>
 
-  <h2>Images</h2>
-  {% if images %}
-    <p><a href="{% url 'brewery:image_create' brewery.pk %}">Submit an image</a></p>
-    {% for image in images %}
-      <img src="{{ image.image.url }}" alt="{{ image.brewery.name }}">
-    {% endfor %}
-  {% else %}
-    <p>No images yet. Submit one <a href="{% url 'brewery:image_create' brewery.pk %}">here.</a></p>
-  {% endif %}
+    <h2>Images</h2>
+    {% if images %}
+      <p><a href="{% url 'brewery:image_create' brewery.pk %}">Submit an image</a></p>
+      {% for image in images %}
+        <img src="{{ image.image.url }}" alt="{{ image.brewery.name }}">
+      {% endfor %}
+    {% else %}
+      <p>No images yet. Submit one <a href="{% url 'brewery:image_create' brewery.pk %}">here.</a></p>
+    {% endif %}
 
-  <h2>Beers</h2>
-  {% if beers %}
-    <p><a href="{% url 'beer:beer_create' brewery.pk %}">Submit a beer</a></p>
-    <ul>
-    {% for beer in beers %}
-      <li><a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a></li>
-    {% endfor %}
-    </ul>
-  {% else %}
-    <p>No beers yet. Submit one <a href="{% url 'beer:beer_create' brewery.pk %}">here.</a></p>
-  {% endif %}
+    <h2>Beers</h2>
+    {% if beers %}
+      <p><a href="{% url 'beer:beer_create' brewery.pk %}">Submit a beer</a></p>
+      <ul>
+      {% for beer in beers %}
+        <li><a href="{% url 'beer:beer_detail' beer.pk %}">{{ beer.name }}</a></li>
+      {% endfor %}
+      </ul>
+    {% else %}
+      <p>No beers yet. Submit one <a href="{% url 'beer:beer_create' brewery.pk %}">here.</a></p>
+    {% endif %}
 
-  <h2>Locations</h2>
-  {% if locations %}
-    <p><a href="{% url 'location:location_create' brewery.pk %}">Submit a location</a></p>
-    <ul>
-    {% for location in locations %}
-      <li><a href="{% url 'location:location_detail' location.pk %}">{{ location.street }} {{ location.city }}, {{ location.state }}</a></li>
-    {% endfor %}
-    </ul>
-  {% else %}
-    <p>No locations yet. Add one <a href="{% url 'location:location_create' brewery.pk %}">here.</a></p>
-  {% endif %}
+    <h2>Locations</h2>
+    {% if locations %}
+      <p><a href="{% url 'location:location_create' brewery.pk %}">Submit a location</a></p>
+      <ul>
+      {% for location in locations %}
+        <li><a href="{% url 'location:location_detail' location.pk %}">{{ location.street }} {{ location.city }}, {{ location.state }}</a></li>
+      {% endfor %}
+      </ul>
+    {% else %}
+      <p>No locations yet. Add one <a href="{% url 'location:location_create' brewery.pk %}">here.</a></p>
+    {% endif %}
+  </div>
 {% endblock %}

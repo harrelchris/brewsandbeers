@@ -1,15 +1,18 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 
 {% block title %}{{ brewery.name }}{% endblock %}
 
 {% block content %}
-  <h1>{{ brewery.name }}</h1>
-  <p>
-    Upload an image for <a href="{% url 'brewery:brewery_detail' brewery.pk %}">{{ brewery.name }}</a>
-  </p>
-  <form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_div }}
-    <input type="submit" value="Upload">
-  </form>
+  <div class="container">
+    <h1>{{ brewery.name }}</h1>
+    <p>
+      Upload an image for <a href="{% url 'brewery:brewery_detail' brewery.pk %}">{{ brewery.name }}</a>
+    </p>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <input type="submit" value="Upload">
+    </form>
+  </div>
 {% endblock %}
