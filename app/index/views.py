@@ -14,8 +14,12 @@ class Index(TemplateView):
         context["beers"] = Beer.objects.all()[:10]
         context["breweries"] = Brewery.objects.all()[:10]
         context["locations"] = Location.objects.all()[:10]
-        context["beer_reviews"] = BeerReview.objects.filter(rating__gt=4).order_by("created_at")[:10]
-        context["location_reviews"] = LocationReview.objects.filter(rating__gt=4).order_by("created_at")[:10]
+        context["beer_reviews"] = BeerReview.objects.filter(rating__gt=4).order_by(
+            "created_at",
+        )[:10]
+        context["location_reviews"] = LocationReview.objects.filter(
+            rating__gt=4,
+        ).order_by("created_at")[:10]
         beer_images = BeerImage.objects.all()[:5]
         brewery_images = Image.objects.all()[:5]
         location_images = LocationImage.objects.all()[:5]
