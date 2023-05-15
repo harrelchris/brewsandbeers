@@ -6,4 +6,5 @@ app_name = "index"
 
 urlpatterns = [
     path("", views.Index.as_view(), name="index"),
+    path("search/", views.search, name="search"),
 ]
