@@ -71,3 +71,7 @@ Run multiple code quality tools on git-staged code.
 ```shell
 pre-commit run --all-files
 ```
+
+![](https://i.imgur.com/kuXnSSj.png)
+![](https://i.imgur.com/l7i1dHa.png)
+![](https://i.imgur.com/jufVMTa.png)
